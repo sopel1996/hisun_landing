@@ -1,0 +1,197 @@
+.sectionMap {
+    background-color: #fff;
+    padding         : 40px 0;
+
+    .sectionInner {
+        display        : flex;
+        flex-direction : column;
+        align-items    : center;
+        justify-content: space-between;
+    }
+
+    &_title {
+        font-family: 'Raleway';
+        font-style : normal;
+        font-weight: 400;
+        font-size  : toRem(80);
+        color      : $primary_color;
+        margin     : 0 0 20px 0;
+    }
+
+    &_subtitle {
+        display        : flex;
+        flex-direction : row;
+        justify-content: center;
+        width          : 100%;
+        font-family    : 'Raleway', sans-serif;
+        font-style     : normal;
+        font-weight    : 400;
+        font-size      : toRem(16);
+        color          : #000;
+        margin         : 0 0 20px 0;
+
+        &::before {
+            content    : '';
+            display    : block;
+            background : transparent url(../img/svg/infoIcon.svg) 50% 50% no-repeat;
+            width      : 20px;
+            height     : 20px;
+            margin     : 0 20px 0 0;
+            flex-shrink: 0;
+        }
+    }
+
+    &_map {
+        position          : relative;
+        text-align        : center;
+        // max-height     : 570px;
+        height            : 580px;
+        width             : 917px;
+
+        // width          : 100%;
+        // min-width      : 280px;
+        // background     : transparent url('../img/12-01-2022_планировка_ridge-2 1.png') 50% 50% no-repeat;
+        // background-size: cover;
+        .popup {
+            display         : none;
+            position        : absolute;
+            border          : 2px solid $primary_color;
+            padding         : 10px;
+            // width: 100px;
+            background-color: #fff;
+
+            // height: 100px;
+            img {
+                max-width: none;
+                margin   : 0 0 10px;
+
+            }
+
+            .p_1 {
+                font-family: 'Raleway', sans-serif;
+                font-style : normal;
+                font-weight: 400;
+                font-size  : toRem(18);
+                margin     : 0 0 10px;
+                color      : $primary_color;
+                text-align : left;
+            }
+
+            .p_2 {
+                font-family: 'Raleway', sans-serif;
+                font-style : normal;
+                font-weight: 400;
+                font-size  : toRem(16);
+                text-align : left;
+            }
+        }
+
+        #popup_1 {
+            top : 125px;
+            left: 405px;
+        }
+
+        #popup_2 {
+            top : 125px;
+            left: 465px;
+        }
+
+        #popup_3 {
+            top : 0px;
+            left: 533px;
+        }
+
+        #popup_4 {
+            top : 145px;
+            left: 655px;
+        }
+
+        #popup_5 {
+            top : 235px;
+            left: 654px;
+        }
+
+        #popup_6 {
+            top : 235px;
+            left: 521px;
+        }
+
+        #popup_7 {
+            top : 235px;
+            left: 401px;
+        }
+
+        #popup_8 {
+            top : 235px;
+            left: 253px;
+        }
+
+        #popup_9 {
+            top : 235px;
+            left: 143px;
+        }
+
+        #popup_10 {
+            top : 235px;
+            left: 8px;
+        }
+
+        #popup_11 {
+            top : 153px;
+            left: 8px;
+        }
+
+        #popup_12 {
+            top : 96px;
+            left: 214px;
+        }
+
+        #popup_13 {
+            top : 133px;
+            left: 214px;
+        }
+
+        #popup_14 {
+            top : 73px;
+            left: 267px;
+        }
+
+        #popup_15 {
+            top : 104px;
+            left: 518px;
+        }
+
+
+
+
+        &-imgMap {
+
+            // height         : 580px;
+            max-width         : none;
+            // width          : 917px;
+            // min-width      : 280px;
+        }
+
+        svg {
+            position              : absolute;
+            top                   : 0;
+            left                  : 0;
+            // width   : 100%;
+            // height  : 100%;
+            height                : 570px;
+            width                 : 918px;
+            // max-width          : 918px;
+            // min-width      : 280px;
+        }
+
+        .part {
+            opacity   : .2;
+            transition: all 0.2s;
+            position  : relative;
+
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+}

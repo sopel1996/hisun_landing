@@ -1,0 +1,152 @@
+.sectionHeader_burger {
+  position: relative;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .burger {
+    margin-top: 20px; //paste your styles
+    width: 100px; //paste your styles
+    height: auto;
+    border: none;
+  }
+  .burger-menu_button {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 32px;
+    height: 32px;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    background-color: #000; //paste your styles
+    width: 40px; //paste your styles
+    height: 40px; //paste your styles
+    position: relative;
+    cursor: pointer;
+    &::after,
+    &::before {
+      content: "";
+      width: 22px; //paste your styles
+      height: 2px; //paste your styles
+      background-color: #fff;
+      position: absolute;
+      top: 15px;
+      left: 9px;
+    }
+    &::after {
+      top: auto;
+      bottom: 15px; //paste your styles
+      width: 11px; //paste your styles
+    }
+    background-color: #000; //paste your styles
+    width: 40px; //paste your styles
+    height: 40px; //paste your styles
+    position: relative;
+    cursor: pointer;
+    &::after,
+    &::before {
+      transition: all 0.5s;
+      content: "";
+      width: 22px;
+      height: 2px;
+      background-color: #fff;
+      position: absolute;
+      top: 15px;
+      left: 9px;
+    }
+    &::after {
+      top: auto;
+      bottom: 15px;
+      width: 11px;
+    }
+    &_active {
+      // right: 75);
+    }
+  }
+  .burger-menu_button:hover .burger-menu_lines {
+    filter: brightness(0.7);
+  }
+  .burger-menu_button:hover {
+    .burger-menu_lines::before,
+    .burger-menu_lines::after,
+    .burger-menu_lines {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+  .burger-menu_button.burger-menu_button_active:hover {
+    .burger-menu_lines {
+      background-color: transparent;
+    }
+  }
+  .burger-menu_active .burger-menu_button::before {
+    top: 19px; //paste your styles
+    transform: rotate(45deg);
+  }
+  .burger-menu_active .burger-menu_button::after {
+    bottom: 19px; //paste your styles
+    width: 22px; //paste your styles
+    transform: rotate(-45deg);
+  }
+  .burger-menu_nav {
+    padding: 60px 30px 20px 30px; //paste your styles
+    position: absolute;
+    top: 0;
+    right: -15px; //paste your styles
+    z-index: 70;
+    display: flex;
+    flex-flow: column;
+    background-color: #fff;
+    overflow-y: auto;
+    height: 372px; //paste your styles
+    width: 323px; //paste your styles
+    top: -400px; //paste your styles
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+  }
+  .burger-menu_active .burger-menu_nav {
+    top: -55px; //paste your styles
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .burger-menu_link {
+    font-family: Raleway, sans-serif; //paste your styles
+    font-style: normal; //paste your styles
+    font-weight: 400; //paste your styles
+    font-size: 22px; //paste your styles
+    line-height: 120%; //paste your styles
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #000;
+    width: 100%;
+    height: 50px; //paste your styles
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  .burger-menu_link:hover {
+    color: #000; //paste your styles
+  }
+  .burger-menu_overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 50;
+  }
+  .burger-menu_active .burger-menu_overlay {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*
+----------------------------
+Fonts
+-----------------------------
+*/
+
+@font-face {
+    font-family: "Raleway";
+    src        : url('../fonts/Raleway-Bold.ttf') format('truetype'),
+        url('../fonts/Raleway-Bold.woff') format('woff'),
+        url('../fonts/Raleway-Bold.woff2') format('woff2');
+    font-weight : 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src        : url('../fonts/Raleway-Regular.ttf') format('truetype'),
+        url('../fonts/Raleway-Regular.woff') format('woff'),
+        url('../fonts/Raleway-Regular.woff2') format('woff2');
+    font-weight : 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Numans";
+    src        : url('../fonts/Numans-Regular.ttf') format('truetype'),
+        url('../fonts/Numans-Regular.woff') format('woff'),
+        url('../fonts/Numans-Regular.woff2') format('woff2');
+    font-weight : 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src        : url('../fonts/Raleway-Semibold.ttf') format('truetype'),
+        url('../fonts/Raleway-Semibold.woff') format('woff'),
+        url('../fonts/Raleway-Semibold.woff2') format('woff2');
+    font-weight : 600;
+    font-display: swap;
+}

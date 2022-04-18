@@ -1,0 +1,143 @@
+@import 'mixins.scss';
+
+.sectionHeader {
+    width           : 100%;
+    height          : 80px;
+    background-color: #fff;
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    z-index         : 100;
+
+    .sectionInner {
+        height         : 100%;
+        display        : flex;
+        flex-direction : row;
+        align-items    : center;
+        justify-content: space-between;
+    }
+
+    &_Logo {
+        width : 213px;
+        height: 40px;
+    }
+
+    &_btnWrapper {
+        display        : flex;
+        flex-direction : row;
+        align-items    : center;
+        justify-content: space-between;
+        width          : 380px;
+
+        &-btn {
+            font-family     : "Raleway", sans-serif;
+            font-style      : normal;
+            font-weight     : 600;
+            font-size       : toRem(16);
+            width           : 180px;
+            height          : 40px;
+            border          : 1px solid $grey_color;
+            outline         : none;
+            background-color: #fff;
+            text-transform  : uppercase;
+            color           : #000;
+            transition      : all 0.4s;
+            cursor          : pointer;
+
+            &:hover {
+                background-color: $secondary_color;
+                border          : 1px solid $secondary_color;
+                color           : #fff;
+            }
+
+            &.active {
+                background-color: $secondary_color;
+                border          : 1px solid $secondary_color;
+                color           : #fff;
+            }
+        }
+    }
+
+    &_contacts {
+        font-family    : "Numans", sans-serif;
+        font-style     : normal;
+        font-weight    : 400;
+        font-size      : toRem(20);
+        display        : flex;
+        flex-direction : row;
+        align-items    : center;
+        justify-content: space-between;
+        width          : 260px;
+
+        &-phone {
+            color          : #000;
+            text-decoration: none;
+            cursor         : pointer;
+
+
+            &:active,
+            &:visited {
+                color: inherit;
+            }
+        }
+
+        &-socialLogo {
+            width           : 26px;
+            height          : 26px;
+            display         : flex;
+            align-items     : center;
+            justify-content : center;
+            background-color: rgba(4, 40, 52, 0.3);
+            transition      : all 0.4s;
+            cursor          : pointer;
+
+            &:first-child {
+
+                width: 500px;
+            }
+
+            &:hover {
+                background-color: $secondary_color;
+
+            }
+
+            &Img {}
+        }
+    }
+
+    &_lang {
+        width          : 65px;
+        display        : flex;
+        flex-direction : row;
+        align-items    : center;
+        justify-content: space-between;
+
+        &-item {
+            font-family    : Raleway, sans-serif;
+            font-style     : normal;
+            font-weight    : 400;
+            font-size      : toRem(14);
+            color          : #000;
+            text-decoration: none;
+            text-transform : uppercase;
+            opacity        : 0.5;
+
+            &:active,
+            &:visited {
+                color: inherit;
+            }
+
+            &:hover {
+                color: #000;
+
+            }
+
+            &.active {
+                opacity: 1;
+            }
+
+        }
+    }
+
+    &_burger {}
+}
