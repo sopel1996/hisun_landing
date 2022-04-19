@@ -1,83 +1,66 @@
-@import 'mixins.scss';
+@import 'color.scss';
 
 .sectionWhyUs {
-    margin: 0 0 80px 0;
+    height          : 690px;
+    background-color: $grey_color;
+    padding         : 60px 0;
 
     .sectionInner {
+        height         : 100%;
         display        : flex;
         flex-direction : column;
         align-items    : flex-start;
         justify-content: space-between;
     }
 
-    &FirstRow,
-    &SecondRow {
-        width          : 100%;
+    &_title {
+        font-family: 'Rubik';
+        font-style : normal;
+        font-weight: 700;
+        font-size  : 48px;
+        line-height: 57px;
+        width      : 620px;
+        color: #fff;
+
+        span {
+            text-transform: uppercase;
+        }
+    }
+
+    &_content {
         display        : flex;
         flex-direction : row;
         align-items    : center;
         justify-content: space-between;
-    }
 
-    &FirstRow {
-        margin: 0 0 90px 0;
-    }
+        &-list {
+            width: 500px;
+            list-style: none;
 
-    &_title {
-        font-family: "Raleway", sans-serif;
-        font-style : normal;
-        font-weight: 400;
-        font-size  : toRem(55);
-        color      : $primary_color;
-        margin     : 0 0 40px 0;
-    }
-
-    &_list {
-        width     : 370px;
-        list-style: none;
-        height    : 100%;
-
-        &Item {
-            display        : flex;
-            flex-direction : row;
-            align-items    : flex-start;
-            justify-content: flex-start;
-            margin         : 0 0 20px 0;
-            font-family    : "Raleway", sans-serif;
-            font-style     : normal;
-            font-weight    : 400;
-            font-size      : toRem(19);
-            line-height    : 140%;
-
-            &::before {
-                display    : block;
-                content    : '';
-                background : transparent url(../img/svg/listDisk.svg) 50% 50% no-repeat;
-                width      : 14px;
-                height     : 14px;
-                margin     : 0 20px 0 0;
-                flex-shrink: 0;
+            &Item {
+                font-family: 'Rubik';
+                font-style : normal;
+                font-weight: 400;
+                font-size  : 18px;
+                line-height: 140%;
+                color: rgba(255, 255, 255, 0.85);
+                margin: 0 0 15px 0;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: flex-start;
+                &::before{
+                    content:'';
+                    display: block;
+                    background: transparent url(../img/svg/listShevron.svg) 50% 50%/contain no-repeat;
+                    width: 7px;
+                    height: 14px;
+                    flex-shrink: 0;
+                    margin: 0 23px 0 0;
+                }
             }
         }
 
+        &-slider {}
     }
-
-    &_btn {
-        width          : 390px;
-        height         : 70px;
-        color          : #fff;
-        text-decoration: none;
-        margin         : 50px 0 0 0;
-
-        &:visited,
-        &:active {
-            color: #fff;
-        }
-
-        &:hover {
-            color: darken(#fff, 20);
-        }
-    }
-
-    &_img {}
 }

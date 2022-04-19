@@ -1,0 +1,63 @@
+@import 'color.scss';
+
+.sectionBenefits {
+    height: 1310px;
+    padding: 150px 0;
+    background-color: $grey_color;
+    .sectionInner {
+        height: 100%;
+        display: flex;
+    }
+    &_slider {
+
+    }
+    &_text {
+        &-title {
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            color: #fff;
+            margin: 0 0 60px 0;
+        }
+        &-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            &List {
+                width: 500px;
+                list-style: none;
+    
+                &Item {
+                    font-family: 'Rubik';
+                    font-style : normal;
+                    font-weight: 400;
+                    font-size  : 18px;
+                    line-height: 140%;
+                    color: rgba(255, 255, 255, 0.85);
+                    margin: 0 0 15px 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    &::before{
+                        content:'';
+                        display: block;
+                        background: transparent url(../img/svg/listShevron.svg) 50% 50%/contain no-repeat;
+                        width: 7px;
+                        height: 14px;
+                        flex-shrink: 0;
+                        margin: 0 23px 0 0;
+                    }
+                }
+            }
+            &Video {
+                &Item{
+                    border-radius: 15px;
+                }
+            }
+        }
+            
+    }
+}

@@ -1,0 +1,51 @@
+@import 'color.scss';
+
+.sectionGetOffer {
+    height: 756px;
+
+    .sectionInner {
+        height         : 100%;
+        display        : flex;
+        flex-direction : row;
+        align-items    : center;
+        justify-content: space-between;
+    }
+
+    &_text {
+        &-title {
+            font-family: 'Rubik';
+            font-style : normal;
+            font-weight: 700;
+            font-size  : 48px;
+            color      : #000;
+            margin     : 0 0 60px 0;
+            width: 550px;
+            span {
+                color: $primary_color;
+            }
+        }
+
+        &-content {
+            width: 395px;
+            font-family: 'Rubik';
+            font-style : normal;
+            font-weight: 400;
+            font-size  : 18px;
+            margin     : 0 0 60px 0;
+        }
+
+        &-getPhone {
+            width : 330px;
+            height: 80px;
+        }
+    }
+
+    &_img {
+        flex-shrink: 0;
+
+        &-item {
+            width : 100%;
+            height: auto;
+        }
+    }
+}

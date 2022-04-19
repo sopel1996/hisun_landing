@@ -1,0 +1,44 @@
+@import 'color.scss';
+
+.sectionWantSee {
+    height: 857px;
+    background-color: $grey_color;
+    padding: 150px 0;
+    .sectionInner {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &_content {
+        &-title {
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            color: #fff;
+            width: 599px;
+            margin: 0 0 60px 0;
+            span{
+                color: $secondary_color;
+            }
+        }
+        &-text {
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            width: 393px;
+            margin: 0 0 60px 0;
+            color: #fff;
+        }
+        &-requestCall {
+            width: 330px;
+            height: 80px;
+        }
+    }
+    &_img {
+        &-item{}
+    }
+}
