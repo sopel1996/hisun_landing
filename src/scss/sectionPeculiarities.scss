@@ -21,6 +21,7 @@
             width: 100%;
             height: 700px;
             background: transparent  url(../img/png/quadBikeInteractive.png) 50% 50% no-repeat;
+            position: relative;
             .number{
                 display: flex;
                 align-items: center;
@@ -29,6 +30,7 @@
                 height: 35px;
                 border-radius: 50%;
                 color: $primary_color;
+                position: absolute;
                 @include RubikBold(24);
                 background-color: #fff;
                 &:hover{
@@ -40,23 +42,38 @@
                 }
             }
 
-            .one {}
+            // .one {}
 
-            .two {}
+            .two {
+                top: 215px;
+                left: 170px;
+            }
 
-            .three {}
+            .three {
+                top: 325px;
+                right: 125px;
+            }
 
-            .four {}
+            // .four {}
 
-            .five {}
+            .five {
+                top: 250px;
+                left: 100px;
+            }
 
-            .six {}
+            .six {
+                bottom: 250px;
+                right: 125px;
+            }
 
-            .seven {}
+            .seven {
+                top: 300px;
+                right: 290px;
+            }
 
-            .eight {}
+            // .eight {}
 
-            .nine {}
+            // .nine {}
         }
 
         &-accordeon {
@@ -110,7 +127,7 @@
 
                     &_content {
                         @include RubikRegular(18);
-                        padding: 20px;
+                        padding: 20px 0;
                         display: none;
                         color: #000;
                         flex-direction: row;

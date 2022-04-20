@@ -17,7 +17,7 @@
         @include RubikBold(48);
         line-height: 57px;
         width      : 620px;
-        color: #fff;
+        color      : #fff;
 
         span {
             text-transform: uppercase;
@@ -29,32 +29,108 @@
         flex-direction : row;
         align-items    : center;
         justify-content: space-between;
+        width          : 100%;
 
         &-list {
-            width: 500px;
+            width     : 500px;
             list-style: none;
 
             &Item {
                 @include RubikRegular(18);
-                line-height: 140%;
-                color: rgba(255, 255, 255, 0.85);
-                margin: 0 0 15px 0;
-                display: flex;
-                flex-direction: row;
-                align-items: flex-start;
+                line-height    : 140%;
+                color          : rgba(255, 255, 255, 0.85);
+                margin         : 0 0 15px 0;
+                display        : flex;
+                flex-direction : row;
+                align-items    : flex-start;
                 justify-content: flex-start;
-                &::before{
-                    content:'';
-                    display: block;
-                    background: transparent url(../img/svg/listShevron.svg) 50% 50%/contain no-repeat;
-                    width: 7px;
-                    height: 14px;
+
+                &::before {
+                    content    : '';
+                    display    : block;
+                    background : transparent url(../img/svg/listShevron.svg) 50% 50%/contain no-repeat;
+                    width      : 7px;
+                    height     : 14px;
                     flex-shrink: 0;
-                    margin: 0 23px 0 0;
+                    margin     : 0 23px 0 0;
                 }
             }
         }
 
-        &-slider {}
+        &-slider {
+            position       : relative;
+            display        : flex;
+            align-items    : center;
+            justify-content: flex-end;
+            width          : 610px;
+            height         : 400px;
+
+            .swiper {
+                width    : 100%;
+                // height: 100%;
+            }
+
+            .swiper-slide {
+                height         : 320px;
+                text-align     : center;
+                font-size      : 18px;
+                display        : flex;
+                justify-content: center;
+                align-items    : center;
+                border-radius  : 20px;
+            }
+
+            .swiper-slide img {
+                display      : block;
+                width        : 100%;
+                height       : 100%;
+                object-fit   : cover;
+                border-radius: 20px;
+            }
+
+            .swiper-pagination_2 {
+                position       : absolute;
+                top            : 0;
+                left           : 0;
+                height         : 20px;
+                display        : flex;
+                flex-direction : row;
+                align-items    : flex-end;
+                justify-content: flex-start;
+                @include GilroyRegular(16);
+                color      : #fff;
+                line-height: 1;
+
+                .swiper-pagination-current {
+                    color      : #D4272C;
+                    font-size  : 40px;
+                    line-height: 0.7;
+                }
+            }
+
+            .swiper-button-next_2,
+            .swiper-button-prev_2 {
+                top  : 0;
+                right: 0;
+                left : auto;
+            }
+
+            .swiper-button-prev_2 {
+                right: 35px;
+            }
+
+            .swiper-button-next_2::after,
+            .swiper-button-prev_2::after {
+                content   : '';
+                background: transparent url(../img/svg/arrow.svg) 50% 50%/contain no-repeat;
+                width     : 33px;
+                height    : 19px;
+
+            }
+
+            .swiper-button-prev_2::after {
+                transform: rotate(180deg);
+            }
+        }
     }
 }

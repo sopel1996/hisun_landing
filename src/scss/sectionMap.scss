@@ -33,16 +33,45 @@
         &-location {
             @include InterMedium(14);
             margin: 0 0 15px 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            &::before{
+                content: url(../img/svg/pinBlack.svg);
+                margin: 0 10px 0 0;
+            }
         }
         
         &-phone {
             @include InterMedium(14);
             margin: 0 0 15px 0;
-            display: block;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            color: #000;
+            text-decoration: none;
+            &:active,
+            &:visited{
+                color: #000;
+            }
+            &::before{
+                content: url(../img/svg/phoneBlack.svg);
+                margin: 0 10px 0 0;
+            }
         }
 
         &-workTime {
             @include InterMedium(14);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            &::before{
+                content: url(../img/svg/workTime.svg);
+                margin: 0 10px 0 0;
+            }
         }
     }
 }
