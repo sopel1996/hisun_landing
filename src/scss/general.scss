@@ -26,8 +26,9 @@ body {
     background-color: $primary_color;
     color           : #fff;
     text-transform  : uppercase;
-    font-family     : "Raleway", sans-serif;
-    font-style      : normal;
+    
+    @include InterBold(18);
+    
     display         : flex;
     align-items     : center;
     justify-content : center;

@@ -1,32 +1,105 @@
 @import 'color.scss';
 
 .sectionPeculiarities {
-}
-.sectionInner {
-}
-.sectionPeculiarities_title {
-}
-.sectionPeculiarities_content {
-}
-.sectionPeculiarities_content-iteractiveImg {
-}
-.one {
-}
-.two {
-}
-.three {
-}
-.four {
-}
-.five {
-}
-.six {
-}
-.seven {
-}
-.eight {
-}
-.nine {
-}
-.sectionPeculiarities_content-accordeon {
+    padding: 150px 0;
+    .sectionInner {
+        height: 100%
+    }
+
+    &_title {
+        @include RubikBold(48);
+    }
+
+    &_content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        &-iteractiveImg {
+            width: 100%;
+            height: 700px;
+            background: transparent  url(../img/png/quadBikeInteractive.png) 50% 50% no-repeat;
+            .one {}
+
+            .two {}
+
+            .three {}
+
+            .four {}
+
+            .five {}
+
+            .six {}
+
+            .seven {}
+
+            .eight {}
+
+            .nine {}
+        }
+
+        &-accordeon {
+            .accordeon {
+                width: 500px;
+                flex-shrink: 0;
+                &Item {
+                    position: relative;
+                    margin-bottom: 10px;
+
+                    &_input {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+
+                        &:checked~.accordeonItem_trigger {
+                            &::after {
+                                content: url(../img/svg/accordeonShevron.svg);
+                                transform: scale(1, -1);
+                            }
+                        }
+
+                        &:checked~.accordeonItem_content {
+                            display: flex;
+                        }
+                    }
+
+                    &_trigger {
+                        @include RubikMedium(18);
+                        position: relative;
+                        
+                        &::after {
+                            transition: all 0.5s;
+                            display: block;
+                            color: #fff;
+                            content: url(../img/svg/accordeonShevron.svg);
+                            position: absolute;
+                            right: 20px;
+                        }
+                        padding: 10px;
+                        padding-left:  0px;
+                        color: #000;
+                        width: 100%;
+                        min-height: 45px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                    }
+
+                    &_content {
+                        @include RubikRegular(18);
+                        padding: 20px;
+                        display: none;
+                        color: #000;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
+    }
 }

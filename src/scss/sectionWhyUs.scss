@@ -14,10 +14,7 @@
     }
 
     &_title {
-        font-family: 'Rubik';
-        font-style : normal;
-        font-weight: 700;
-        font-size  : 48px;
+        @include RubikBold(48);
         line-height: 57px;
         width      : 620px;
         color: #fff;
@@ -38,10 +35,7 @@
             list-style: none;
 
             &Item {
-                font-family: 'Rubik';
-                font-style : normal;
-                font-weight: 400;
-                font-size  : 18px;
+                @include RubikRegular(18);
                 line-height: 140%;
                 color: rgba(255, 255, 255, 0.85);
                 margin: 0 0 15px 0;

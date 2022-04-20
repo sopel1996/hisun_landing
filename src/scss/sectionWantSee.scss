@@ -13,10 +13,7 @@
     }
     &_content {
         &-title {
-            font-family: 'Rubik';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 48px;
+            @include RubikBold(48);
             color: #fff;
             width: 599px;
             margin: 0 0 60px 0;
@@ -25,10 +22,7 @@
             }
         }
         &-text {
-            font-family: 'Rubik';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
+            @include RubikRegular(18);
             width: 393px;
             margin: 0 0 60px 0;
             color: #fff;

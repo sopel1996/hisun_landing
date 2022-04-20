@@ -15,52 +15,34 @@
         padding: 28px;
 
         &-title {
-            font-family: 'Rubik';
-            font-style : normal;
-            font-weight: 500;
-            font-size  : 20px;
+            @include RubikMedium(20);
             margin: 0 0 10px 0;
         }
         
         &-decription {
-            font-family: 'Rubik';
-            font-style : normal;
-            font-weight: 400;
-            font-size  : 16px;
+            @include RubikRegular(16);
             margin: 0 0 10px 0;
         }
         
         &-stock {
-            font-family: 'Rubik';
-            font-style : normal;
-            font-weight: 400;
-            font-size  : 14px;
+            @include RubikRegular(14);
             color      : #278C2A;
             margin: 0 0 24px 0;
         }
         
         &-location {
-            font-family: 'Inter';
-            font-style : normal;
-            font-weight: 500;
-            font-size  : 14px;
+            @include InterMedium(14);
             margin: 0 0 15px 0;
         }
         
         &-phone {
-            font-family: 'Inter';
-            font-style : normal;
-            font-weight: 500;
-            font-size  : 14px;
+            @include InterMedium(14);
             margin: 0 0 15px 0;
             display: block;
         }
 
         &-workTime {
-            font-family: 'Inter';
-            font-style : normal;
-            font-weight: 500;
-            font-size  : 14px;
+            @include InterMedium(14);
         }
     }
 }

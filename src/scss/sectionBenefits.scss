@@ -7,20 +7,29 @@
     .sectionInner {
         height: 100%;
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
     }
     &_slider {
-
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        &-item{
+            width: calc(100% / 3 - 20px);
+            border-radius: 20px;
+        }
     }
     &_text {
+        width: 100%;
         &-title {
-            font-family: 'Rubik';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 48px;
+            @include RubikBold(48);
             color: #fff;
             margin: 0 0 60px 0;
         }
         &-content {
+            width: 100%;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -30,10 +39,7 @@
                 list-style: none;
     
                 &Item {
-                    font-family: 'Rubik';
-                    font-style : normal;
-                    font-weight: 400;
-                    font-size  : 18px;
+                    @include RubikRegular(18);
                     line-height: 140%;
                     color: rgba(255, 255, 255, 0.85);
                     margin: 0 0 15px 0;

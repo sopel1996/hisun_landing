@@ -4,22 +4,256 @@
 Fonts
 -----------------------------
 */
+
+// @font-face {
+//     font-family: "Rubik";
+//     src        : url('../fonts/Rubik-Thin.ttf') format('truetype'),
+//         url('../fonts/Rubik-Thin.woff') format('woff'),
+//         url('../fonts/Rubik-Thin.woff2') format('woff2');
+//     font-weight : 100;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: "Rubik";
+//     src        : url('../fonts/Rubik-ExtraLight.ttf') format('truetype'),
+//         url('../fonts/Rubik-ExtraLight.woff') format('woff'),
+//         url('../fonts/Rubik-ExtraLight.woff2') format('woff2');
+//     font-weight : 200;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: "Rubik";
+//     src        : url('../fonts/Rubik-Light.ttf') format('truetype'),
+//         url('../fonts/Rubik-Light.woff') format('woff'),
+//         url('../fonts/Rubik-Light.woff2') format('woff2');
+//     font-weight : 300;
+//     font-display: swap;
+// }
+
 @font-face {
     font-family: "Rubik";
-    src        : url('../fonts/Rubikmedium.ttf') format('truetype'),
-        url('../fonts/Rubikmedium.woff') format('woff'),
-        url('../fonts/Rubikmedium.woff2') format('woff2');
+    src        : url('../fonts/Rubik-Regular.ttf') format('truetype'),
+        url('../fonts/Rubik-Regular.woff') format('woff'),
+        url('../fonts/Rubik-Regular.woff2') format('woff2');
     font-weight : 400;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Rubik";
-    src        : url('../fonts/Rubikbold.ttf') format('truetype'),
-        url('../fonts/Rubikbold.woff') format('woff'),
-        url('../fonts/Rubikbold.woff2') format('woff2');
+    src        : url('../fonts/Rubik-Medium.ttf') format('truetype'),
+        url('../fonts/Rubik-Medium.woff') format('woff'),
+        url('../fonts/Rubik-Medium.woff2') format('woff2');
+    font-weight : 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src        : url('../fonts/Rubik-SemiBold.ttf') format('truetype'),
+        url('../fonts/Rubik-SemiBold.woff') format('woff'),
+        url('../fonts/Rubik-SemiBold.woff2') format('woff2');
+    font-weight : 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src        : url('../fonts/Rubik-Bold.ttf') format('truetype'),
+        url('../fonts/Rubik-Bold.woff') format('woff'),
+        url('../fonts/Rubik-Bold.woff2') format('woff2');
     font-weight : 700;
     font-display: swap;
 }
 
+// @font-face {
+//     font-family: "Rubik";
+//     src        : url('../fonts/Rubik-ExtraBold.ttf') format('truetype'),
+//         url('../fonts/Rubik-ExtraBold.woff') format('woff'),
+//         url('../fonts/Rubik-ExtraBold.woff2') format('woff2');
+//     font-weight : 800;
+//     font-display: swap;
+// }
 
+// @font-face {
+//     font-family: "Rubik";
+//     src        : url('../fonts/Rubik-Black.ttf') format('truetype'),
+//         url('../fonts/Rubik-Black.woff') format('woff'),
+//         url('../fonts/Rubik-Black.woff2') format('woff2');
+//     font-weight : 900;
+//     font-display: swap;
+// }
+
+@font-face {
+    font-family: "Rubik";
+    src        : url('../fonts/Rubik-BlackItalic.ttf') format('truetype'),
+        url('../fonts/Rubik-BlackItalic.woff') format('woff'),
+        url('../fonts/Rubik-BlackItalic.woff2') format('woff2');
+    font-weight : 900;
+    font-display: swap;
+    font-style: italic;
+}
+
+// @font-face {
+//     font-family: "Inter";
+//     src        : url('../fonts/Inter-Thin.ttf') format('truetype'),
+//         url('../fonts/Inter-Thin.woff') format('woff'),
+//         url('../fonts/Inter-Thin.woff2') format('woff2');
+//     font-weight : 100;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: "Inter";
+//     src        : url('../fonts/Inter-ExtraLight.ttf') format('truetype'),
+//         url('../fonts/Inter-ExtraLight.woff') format('woff'),
+//         url('../fonts/Inter-ExtraLight.woff2') format('woff2');
+//     font-weight : 200;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: "Inter";
+//     src        : url('../fonts/Inter-Light.ttf') format('truetype'),
+//         url('../fonts/Inter-Light.woff') format('woff'),
+//         url('../fonts/Inter-Light.woff2') format('woff2');
+//     font-weight : 300;
+//     font-display: swap;
+// }
+
+@font-face {
+    font-family: "Inter";
+    src        : url('../fonts/Inter-Regular.ttf') format('truetype'),
+        url('../fonts/Inter-Regular.woff') format('woff'),
+        url('../fonts/Inter-Regular.woff2') format('woff2');
+    font-weight : 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src        : url('../fonts/Inter-Medium.ttf') format('truetype'),
+        url('../fonts/Inter-Medium.woff') format('woff'),
+        url('../fonts/Inter-Medium.woff2') format('woff2');
+    font-weight : 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src        : url('../fonts/Inter-SemiBold.ttf') format('truetype'),
+        url('../fonts/Inter-SemiBold.woff') format('woff'),
+        url('../fonts/Inter-SemiBold.woff2') format('woff2');
+    font-weight : 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src        : url('../fonts/Inter-Bold.ttf') format('truetype'),
+        url('../fonts/Inter-Bold.woff') format('woff'),
+        url('../fonts/Inter-Bold.woff2') format('woff2');
+    font-weight : 700;
+    font-display: swap;
+}
+
+// @font-face {
+//     font-family: "Inter";
+//     src        : url('../fonts/Inter-ExtraBold.ttf') format('truetype'),
+//         url('../fonts/Inter-ExtraBold.woff') format('woff'),
+//         url('../fonts/Inter-ExtraBold.woff2') format('woff2');
+//     font-weight : 800;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: "Inter";
+//     src        : url('../fonts/Inter-Black.ttf') format('truetype'),
+//         url('../fonts/Inter-Black.woff') format('woff'),
+//         url('../fonts/Inter-Black.woff2') format('woff2');
+//     font-weight : 900;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: "Gilroy";
+//     src        : url('../fonts/Gilroy-Thin.ttf') format('truetype'),
+//         url('../fonts/Gilroy-Thin.woff') format('woff'),
+//         url('../fonts/Gilroy-Thin.woff2') format('woff2');
+//     font-weight : 100;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: "Gilroy";
+//     src        : url('../fonts/Gilroy-ExtraLight.ttf') format('truetype'),
+//         url('../fonts/Gilroy-ExtraLight.woff') format('woff'),
+//         url('../fonts/Gilroy-ExtraLight.woff2') format('woff2');
+//     font-weight : 200;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: "Gilroy";
+//     src        : url('../fonts/Gilroy-Light.ttf') format('truetype'),
+//         url('../fonts/Gilroy-Light.woff') format('woff'),
+//         url('../fonts/Gilroy-Light.woff2') format('woff2');
+//     font-weight : 300;
+//     font-display: swap;
+// }
+
+@font-face {
+    font-family: "Gilroy";
+    src        : url('../fonts/Gilroy-Regular.ttf') format('truetype'),
+        url('../fonts/Gilroy-Regular.woff') format('woff'),
+        url('../fonts/Gilroy-Regular.woff2') format('woff2');
+    font-weight : 400;
+    font-display: swap;
+}
+
+// @font-face {
+//     font-family: "Gilroy";
+//     src        : url('../fonts/Gilroy-Medium.ttf') format('truetype'),
+//         url('../fonts/Gilroy-Medium.woff') format('woff'),
+//         url('../fonts/Gilroy-Medium.woff2') format('woff2');
+//     font-weight : 500;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: "Gilroy";
+//     src        : url('../fonts/Gilroy-SemiBold.ttf') format('truetype'),
+//         url('../fonts/Gilroy-SemiBold.woff') format('woff'),
+//         url('../fonts/Gilroy-SemiBold.woff2') format('woff2');
+//     font-weight : 600;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: "Gilroy";
+//     src        : url('../fonts/Gilroy-Bold.ttf') format('truetype'),
+//         url('../fonts/Gilroy-Bold.woff') format('woff'),
+//         url('../fonts/Gilroy-Bold.woff2') format('woff2');
+//     font-weight : 700;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: "Gilroy";
+//     src        : url('../fonts/Gilroy-ExtraBold.ttf') format('truetype'),
+//         url('../fonts/Gilroy-ExtraBold.woff') format('woff'),
+//         url('../fonts/Gilroy-ExtraBold.woff2') format('woff2');
+//     font-weight : 800;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: "Gilroy";
+//     src        : url('../fonts/Gilroy-Black.ttf') format('truetype'),
+//         url('../fonts/Gilroy-Black.woff') format('woff'),
+//         url('../fonts/Gilroy-Black.woff2') format('woff2');
+//     font-weight : 900;
+//     font-display: swap;
+// }

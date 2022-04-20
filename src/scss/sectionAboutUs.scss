@@ -15,15 +15,13 @@
         padding: 60px 0;
         width: 495px;
         &-title {
-            font-family: 'Rubik';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 48px;
+            @include RubikBold(48);
             color: #fff;
             text-transform: uppercase;
             margin: 0 0 60px 0;
         }
         &-text {
+            @include RubikRegular(18);
             color: #fff;
                 margin: 0 0 30px 0;
                 &:last-child{

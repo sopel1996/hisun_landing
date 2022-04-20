@@ -20,10 +20,7 @@
             margin: 0 10px 0 0;
         }
         &-text {
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 10px;
+            @include InterRegular(10);
             color: #fff;
             width: 116px;
         }
@@ -36,18 +33,12 @@
         color: #fff;
         width: 297px;
         &-location {
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
+            @include InterMedium(14);
         }
         &-phone {
+            @include InterMedium(14);
             color: inherit;
             text-decoration: none;
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
         }
     }
 }

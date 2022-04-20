@@ -61,6 +61,7 @@
     }
 
     &_color {
+        @include RubikMedium(16);
         &-line {
             &Item {}
         }
@@ -73,10 +74,7 @@
         justify-content: space-between;
         margin: 0 0 40px 0;
         &-new {
-            font-family: 'Rubik';
-            font-style : normal;
-            font-weight: 700;
-            font-size  : 35px;
+            @include RubikBold(35);
             color      : #000;
 
             span {
@@ -125,10 +123,7 @@
             }
 
             span {
-                font-family: 'Rubik';
-                font-style : normal;
-                font-weight: 700;
-                font-size  : 18px;
+                @include RubikBold(18);
                 color      : #212129;
             }
         }

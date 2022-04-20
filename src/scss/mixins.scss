@@ -4,26 +4,63 @@
     @return $remValue;
 }
 
-@mixin PFDinDisplayProBold($size_px) {
-    font-family: 'PFDinDisplayPro', sans-serif;
-    font-weight: 700;
-    font-size  : toRem($size_px);
-}
-
-@mixin ProximaNovaNormal($size_px) {
-    font-family: 'ProximaNova', sans-serif;
+@mixin RubikRegular($size_px) {
+    font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size  : toRem($size_px);
+    font-style : normal;
 }
-
-@mixin ProximaNovaSemibold($size_px) {
-    font-family: 'ProximaNova', sans-serif;
+@mixin RubikMedium($size_px) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size  : toRem($size_px);
+    font-style : normal;
+}
+@mixin RubikSemiBold($size_px) {
+    font-family: 'Rubik', sans-serif;
     font-weight: 600;
     font-size  : toRem($size_px);
+    font-style : normal;
 }
-
-@mixin ProximaNovaBold($size_px) {
-    font-family: 'ProximaNova', sans-serif;
+@mixin RubikBold($size_px) {
+    font-family: 'Rubik', sans-serif;
     font-weight: 700;
     font-size  : toRem($size_px);
+    font-style : normal;
+}
+@mixin RubikBlackItalic($size_px) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 900;
+    font-size  : toRem($size_px);
+    font-style : italic;
+}
+@mixin InterRegular($size_px) {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size  : toRem($size_px);
+    font-style : normal;
+}
+@mixin InterMedium($size_px) {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size  : toRem($size_px);
+    font-style : normal;
+}
+@mixin InterSemiBold($size_px) {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size  : toRem($size_px);
+    font-style : normal;
+}
+@mixin InterBold($size_px) {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size  : toRem($size_px);
+    font-style : normal;
+}
+@mixin GilroyRegular($size_px) {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size  : toRem($size_px);
+    font-style : normal;
 }
