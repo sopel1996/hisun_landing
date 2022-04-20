@@ -62,8 +62,29 @@
 
     &_color {
         @include RubikMedium(16);
+        margin: 0 0 40px 0;
         &-line {
-            &Item {}
+            margin: 15px 0 0 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 85px;
+            &Item {
+                display: block;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+            }
+            .black{
+                background-color: #212129;
+            }
+            .green{
+                background-color: #4C6142;
+            }
+            .blue{
+                background-color: #0B2150;
+            }
         }
     }
 
@@ -76,13 +97,15 @@
         &-new {
             @include RubikBold(35);
             color      : #000;
+            margin: 0 20px 0 0;
 
             span {
                 color: $secondary_color
             }
         }
-
+        
         &-old {
+            padding: 0 0 4px 0;
             font-family    : 'Rubik';
             font-style     : normal;
             font-weight    : 700;
