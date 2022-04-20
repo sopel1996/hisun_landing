@@ -31,6 +31,13 @@
                 color: $primary_color;
                 @include RubikBold(24);
                 background-color: #fff;
+                &:hover{
+                    background-color: darken(#fff, 5);
+                }
+                &:active{
+                    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.2) inset;
+
+                }
             }
 
             .one {}
