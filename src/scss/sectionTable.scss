@@ -21,8 +21,16 @@
         color: #000;
     }
     .sectionTable_select {
-        @include RubikBold(24);
-        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        &-label{
+            @include RubikBold(24);
+            margin: 0 20px 0 0;
+            display: block;
+            white-space: nowrap;
+        }        
     }
     .sectionTable_table {
         background: #FFFFFF;
@@ -40,15 +48,158 @@
             // padding: 60px 60px 0 60px;
             border: none;
             @include RubikBold(24);
-            margin:  0 0 30px 0;
             text-align: left;
-            line-height: 2.5;
         }
         td{
             @include RubikRegular(24);
             border: none;
             border-bottom: 1px solid #C4C4C4;
             line-height: 2.5;
+            div{
+                width: 290px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                line-height: 1.5;
+                padding: 20px 0;
+            }   
+            
+        }
+        .better::before{
+            content: '';
+            display: block;
+            width: 24px;
+            height: 24px;
+            background: transparent url(../img/svg/check.svg) 50% 50%/contain no-repeat;
+            margin: 0  10px 0 0;
+        }
+        .worse::before{
+            content: '';
+            display: block;
+            width: 24px;
+            height: 24px;
+            background: transparent url(../img/svg/cross.svg) 50% 50%/contain no-repeat;
+            margin: 0  10px 0 0;
+        }
+        .pad{
+            padding: 0 0 0 34px;
+        }
+    }
+}
+.__select {
+    @include RubikRegular(20);
+    position       : relative;
+    width          : 230px;
+    height         : 48px;
+    margin         : 0 auto;
+    border-radius  : 24px;
+    padding        : 0 20px;
+    font-weight    : normal;
+    font-size      : 16px;
+    line-height    : 100%;
+    color          : #000;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: flex-start;
+    &[data-state=active] &__title::before {
+        transform: translate(-1px, -50%) rotate(-45deg);
+    }
+    &[data-state=active] &__title::after {
+        transform: translate(3px, -50%) rotate(45deg);
+    }
+    &[data-state=active] &__content {
+        opacity   : 1;
+        // display: flex;
+        display   : block;
+        max-height: 225px;
+        overflow-y: scroll;
+    }
+    &[data-state=active] &__label+&__input+&__label {
+        max-height      : 40px;
+        border-top-width: 1px;
+    }
+    &__title {
+        text-transform: uppercase;
+        display    : flex;
+        align-items: center;
+        width      : 100%;
+        height     : 100%;
+        cursor     : pointer;
+        &::before,
+        &::after {
+            content         : '';
+            position        : absolute;
+            top             : 50%;
+            right           : 24px;
+            display         : block;
+            width           : 6px;
+            height          : 2px;
+            transition      : all 0.3s ease-out;
+            background-color: #000;
+            transform       : translate(-1px, -50%) rotate(45deg);
+        }
+        &::after {
+            transform: translate(3px, -50%) rotate(-45deg);
+        }
+        &:hover {
+            // border-color: #5897fb;
+        }
+        &:hover::before,
+        &:hover::after {
+            // background-color: #5897fb;
+        }
+    }
+    &__content {
+        text-transform: uppercase;
+        position        : absolute;
+        top             : 48px;
+        left            : -1px;
+        display         : none;
+        flex-direction  : column;
+        width           : 250px;
+        background-color: #ffffff;
+        border-radius   : 24px;
+        transition      : all 0.3s ease-out;
+        opacity         : 0;
+        z-index         : 8;
+        color           : #000;
+        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1);
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        /* Скрываем scrollbar для IE, Edge и Firefox */
+        -ms-overflow-style: none;
+        /* IE и Edge */
+        scrollbar-width   : none;
+        /* Firefox */
+    }
+    &__input {
+        display: none;
+        &:checked+label {
+            color: $primary_color;
+        }
+        &:disabled+label {
+            opacity       : 0.6;
+            pointer-events: none;
+        }
+    }
+    &__label {
+        display    : flex;
+        align-items: center;
+        width      : auto;
+        height     : 40px;
+        padding    : 0 16px;
+        transition : all 0.2s ease-out;
+        cursor     : pointer;
+        overflow   : hidden;
+        &+input+& {
+            border-top: 0 solid #C7CCD160;
+        }
+        &:hover {
+            border         : none;
+            color          : $primary_color;
         }
     }
 }

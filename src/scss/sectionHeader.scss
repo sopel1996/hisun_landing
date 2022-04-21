@@ -15,7 +15,7 @@
         flex-direction: row;
         align-items: flex-end;
         justify-content: flex-start;
-        width: 451px;
+        width: 420px;
         &-img {
             width: 117px;
             height: 30px;
@@ -36,11 +36,19 @@
         width: 374px;
         &-location {
             @include InterMedium(14);
+            &::before{
+                content: url(../img/svg/pin.svg);
+                margin: 0 10px 0 0;
+            }
         }
         &-phone {
             color: inherit;
             text-decoration: none;
             @include InterMedium(32);
+            &::before{
+                content: url(../img/svg/phone.svg);
+                margin: 0 10px 0 0;
+            }
         }
     }
     &_btns {
@@ -48,14 +56,14 @@
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
-        width: 451px;
+        width: 420px;
         &-models {
             @include InterMedium(16);
             color: #fff;
             margin: 0 15px 0 0 ;
         }
         &-requestCall {
-            width: 275px;
+            width: 250px;
             height: 68px;
             display: flex;
             align-items: center;
