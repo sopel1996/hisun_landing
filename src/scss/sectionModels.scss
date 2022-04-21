@@ -4,7 +4,7 @@
     height    : 762px;
     background: transparent url(../img/svg/carTrack.svg) 50% 50%/cover no-repeat;
     position  : relative;
-    padding   : 150px;
+    padding   : 150px 0;
 
     &::before {
         content         : '';

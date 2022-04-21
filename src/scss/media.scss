@@ -1,407 +1,147 @@
-@media screen and (max-width: 1540px) {
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+@import 'color.scss';
+@import 'mixins.scss';
 
-    .sectionPlaces_img {
-        left: -150px;
+@media screen and (max-width: 1220px) {
+    .sectionInner{
+        width: 100%;
+        padding: 0 20px;
     }
-}
-
-@media screen and (max-width: 1250px) {
-
-    .sectionPlaces_img {
-        left: -200px;
+    .sectionHeader_logo{
+        width: auto;
     }
-}
-
-@media screen and (max-width: 1120px) {
-    .sectionInner {
-        padding: 0 40px;
-        width  : 100%;
+    .sectionHeader_locationPhone{
+        justify-content: center;
     }
-
-    .sectionHeader_btnWrapper {
-        width: 300px;
+    .sectionHeader_locationPhone-phone{
+        margin: 0 0 0 10px;
     }
-
-    .sectionHeader_btnWrapper-btn {
-        width: 145px;
+    .sectionHeader_locationPhone-phone,
+    .sectionHeader_btns-models{
+        font-size: toRem(14);
     }
-
-    .sectionWorkComfort {}
-
-    .sectionWorkComfort .sectionInner {
-        width : 100%;
-        height: 608px;
+    .sectionHeader_btns-requestCall{
+        font-size: toRem(16);
+        width: 200px;
     }
-
-    .sectionWorkComfort_text,
-    .sectionWorkComfort_img {
-        width : 48%;
-        height: 100%;
+    .sectionModels_slider,
+    .sectionModels_info{
+        width: 48%;
     }
-
-    .sectionWorkComfort_img img {
-        width     : 100%;
-        height    : 100%;
-        object-fit: cover;
+    .sectionBenefits_text-contentList,
+    .sectionBenefits_text-contentVideo{
+        width: 48%;
     }
-
-    .sectionLocation_cards {
-        width          : 100%;
-        justify-content: space-between;
-    }
-
-    .sectionLocation_cards-item {
-        width : calc(100% / 3 - 20px);
-        margin: 0;
-
-    }
-
-    .sectionForm_form {
-        width          : 100%;
-        justify-content: space-between;
-    }
-
-    .sectionForm_form-input,
-    .sectionForm_form-submit {
-        width : calc(100% / 3 - 20px);
-        margin: 0;
-    }
-
-    .sectionWhyUs .sectionInner {
-        width : 100%;
-        height: 1230px;
-    }
-
-    .sectionWhyUs_list,
-    .sectionWhyUs_img {
-        width : 48%;
-        height: 100%;
-    }
-
-    .sectionWhyUs_img img {
-        width     : 100%;
-        height    : 100%;
-        object-fit: cover;
-    }
-
-    .sectionWhyUs_btn {
+    .sectionBenefits_text-contentVideoItem{
         width: 100%;
     }
-
-    .sectionPlaces_logo {
-        width: 30%;
+    .sectionPeculiarities_content-iteractiveImg,
+    .sectionPeculiarities_content-accordeon{
+        width: 48%;
     }
-
-    .sectionTarifs_table th:first-child,
-    .sectionTarifs_table td:first-child {
-        width: 250px;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    html {
-        font-size: 14px;
-    }
-
-    .sectionHeader {
-        height: 125px;
-    }
-
-    .sectionHeader .sectionInner {
-        padding-top: 20px;
-        align-items: flex-start;
-    }
-
-    .sectionHeader_lang {
-        height: 40px;
-    }
-
-    .sectionHeader_contacts {
-        position          : absolute;
-        bottom            : 20px;
-        width             : calc(100% - 80px);
-        // justify-content: flex-start;
-    }
-
-    .sectionHeader_contacts-socialLogo {
-        position: absolute;
-        right   : 0;
-
-    }
-
-    .whatsApp {
-        right: 46px;
-    }
-
-    .sectionBanner {
-        margin-top: 125px;
-    }
-
-    .sectionTarifs_table td:first-child,
-    .sectionTarifs_table th:first-child {
-        width  : auto;
-        padding: 5px 0 5px 15px;
-        ;
-    }
-
-    .sectionTarifs_table th {
-        min-width: auto;
-    }
-
-    .sectionPlaces_img {
-        height: 390px;
-    }
-
-    .sectionPlaces_item {
-        height : calc((390px - 47px) / 3);
-        padding: 0 0 0 42%;
-    }
-
-    .sectionForm_form-input,
-    .sectionForm_form-submit {
-        height: 50px;
-    }
-
-    .sectionLocation_cards-item {
-        width: calc(100% / 3 - 5px);
-    }
-
-    .sectionLocation_cards-itemImg {
-        margin-right: 10px;
-        width       : 37px;
-    }
-}
-
-@media screen and (max-width: 918px) {
-    .sectionMap .sectionMap_map{
-        width: 100%;
-        overflow-y: scroll;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .sectionHeader_burger .burger-menu_nav {
-        height: 450px;
-        top   : -480px;
-    }
-
-    .burger-menu {
-        .burger-menu_nav .sectionHeader_lang {
-            margin : 20px 0;
-            width  : 100%;
-            display: flex;
-        }
-
-        .burger-menu_nav .socialLogosWrapper {
-            width          : 100%;
-            display        : flex;
-            flex-direction : row;
-            align-items    : center;
-            justify-content: space-between;
-
-            .whatsApp,
-            .telegram {
-                position: static;
-                width   : 26px;
-                height  : 26px;
-            }
-        }
-
-        .burger-menu_nav .sectionHeader_btnWrapper {
-            flex-direction : row;
-            width          : 100%;
-            justify-content: space-between;
-            margin         : 20px 0;
-            display        : flex;
-
-            .sectionHeader_btnWrapper-btn {
-                margin: 0;
-                width : calc(100% / 2 - 10px);
-                font-size: .8rem;
-            }
-        }
-
-        .burger-menu_nav .sectionHeader_contacts-phone {
-            font-family: "Numans", sans-serif;
-            font-style : normal;
-            font-weight: 400;
-            font-size  : 1.25rem;
-            display    : block;
-        }
-    }
-
-    #relative {
-        overflow: scroll;
-        position: relative;
-        width   : 100%;
-    }
-
-    .sectionTarifs_table {
-        border-collapse: separate;
-        border-spacing : 0;
-    }
-
-    .sectionTarifs_table td:first-child,
-    .sectionTarifs_table th:first-child {
-        position: sticky;
-        left    : 0;
-        z-index : 99;
-    }
-    .sectionTarifs_table tr:nth-child(2n+1), .sectionTarifs_table tr:nth-child(2n+1) td {
-        background-color: #f2f2f2;
-    }
-    .sectionTarifs_table td{
-        background-color: #fff;
-    }
-
-        
-    .sectionHeader_btnWrapper,
-    .sectionHeader_lang,
-    .sectionHeader_contacts {
-        display           : none;
-        // flex-direction: column;
-        // justify-content: flex-start;
-        // width: auto;
-    }
-
-    .sectionHeader {
-        height: 80px;
-    }
-
-    .sectionBanner {
-        margin-top: 80px;
-    }
-
-    .sectionHeader_btnWrapper-btn:first-child {
-        margin: 0 0 10px 0;
-    }
-
-    .sectionBanner {
-        height: auto;
-
-    }
-
-    .sectionBanner .sectionInner {
-        flex-direction: column;
-        padding       : 20px;
-    }
-
-    .sectionBanner_text {
-        margin: 0 0 30px 0;
-    }
-
-    .sectionBanner_form {
+    .sectionPeculiarities_content-accordeon .accordeon{
         width: 100%;
     }
-
-    .sectionWorkComfort .sectionInner {
-        height        : auto;
-        flex-direction: column;
+    .sectionPeculiarities_content-iteractiveImg{
+        background-size: contain;
     }
-
-    .sectionWorkComfort_img,
-    .sectionWorkComfort_text {
-        width: 100%;
-    }
-
-    .sectionWhyUs .sectionInner {
+    .sectionAboutUs{
         height: auto;
     }
-
-    .sectionWhyUsFirstRow,
-    .sectionWhyUsSecondRow {
-        flex-direction: column;
+    .sectionAboutUs_img{
+        position: static;
     }
-
-    .sectionWhyUs_img,
-    .sectionWhyUs_list {
+    .sectionAboutUs_img,
+    .sectionAboutUs_content{
+        width: 48%;
+    }
+    .sectionAboutUs .sectionAboutUs_img-item{
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
-
-    .sectionWhyUs_img {
-        order : 1;
-        margin: 0 0 10px 0;
+    .sectionGetOffer_text,
+    .sectionGetOffer_img{
+        width: 48%;
     }
-
-    .sectionWhyUs_list {
-        order: 2;
+    .sectionWhyUs_content-list,
+    .sectionWhyUs_content-slider{
+        width: 48%;
     }
-
-    .sectionWhyUsFirstRow {
-        margin: 0 0 40px 0;
+    .sectionWantSee_content,
+    .sectionWantSee_img{
+        width: 48%;
     }
-
-    .sectionPlaces_img {
-        display: none;
-    }
-
-    .sectionPlaces_logo {
-        width: calc(100% - 40px);
-    }
-
-    .sectionPlaces_item {
-        padding: 0 0 0 20px;
-    }
-
-    .sectionLocation_cards {
-        flex-direction: column;
-    }
-
-    .sectionLocation_cards-item {
-        width          : 280px;
-        margin         : 0 0 20px 0;
-        justify-content: flex-start;
-
-        &:last-child {
-            margin: 0;
-        }
-    }
-
-    .sectionLocation_cards-itemImg {
-        margin: 0 20px 0 0;
-    }
-
-    .sectionForm_form {
-        flex-direction: column;
-    }
-
-    .sectionForm_form-input,
-    .sectionForm_form-submit {
-        width: 100%;
-    }
-
-    .sectionForm_form-input {
-        margin: 0 0 20px 0;
-    }
-
-    .sectionPlaces_item span {
-        min-width: auto;
-    }
+    
 }
-
-@media screen and (max-width: 568px) {
-    html {
-        // font-size: 12px;
+@media screen and (max-width: $lg) {
+    .sectionWantSee_content-title,
+    .sectionWantSee_content-text{
+        width: 100%;
     }
-
-    .sectionHeader_burger .burger-menu_nav {
-        width: 280px;
-    }
-
-    .sectionHeader_Logo {
-        width: 180px;
-    }
-
-    .sectionWorkComfort_text-title,
-    .sectionTarifs_title,
-    .sectionWhyUs_title,
-    .sectionLocation_title,
-    .sectionForm_title,
-    .sectionMap_title {
-        font-size: 2.8rem;
-    }
-
-    .sectionPlaces_item {
-        font-size: 2.5rem;
-    }
+    // .sectionHeader_logo{
+    //     width: auto;
+    // }
+    // .sectionHeader_locationPhone{
+    //     justify-content: center;
+    // }
+    // .sectionHeader_locationPhone-phone{
+    //     margin: 0 0 0 10px;
+    // }
+    // .sectionHeader_locationPhone-phone,
+    // .sectionHeader_btns-models{
+    //     font-size: toRem(14);
+    // }
+    // .sectionHeader_btns-requestCall{
+    //     font-size: toRem(16);
+    //     width: 200px;
+    // }
+    // .sectionModels_slider,
+    // .sectionModels_info{
+    //     width: 48%;
+    // }
+    // .sectionBenefits_text-contentList,
+    // .sectionBenefits_text-contentVideo{
+    //     width: 48%;
+    // }
+    // .sectionBenefits_text-contentVideoItem{
+    //     width: 100%;
+    // }
+    // .sectionPeculiarities_content-iteractiveImg,
+    // .sectionPeculiarities_content-accordeon{
+    //     width: 48%;
+    // }
+    // .sectionPeculiarities_content-iteractiveImg{
+    //     background-size: contain;
+    // }
+}
+@media screen and (max-width: 1220px) {
+    
+}
+@media screen and (max-width: 1220px) {
+    
+}
+@media screen and (max-width: 1220px) {
+    
+}
+@media screen and (max-width: 1220px) {
+    
+}
+@media screen and (max-width: 1220px) {
+    
+}
+@media screen and (max-width: 1220px) {
+    
+}
+@media screen and (max-width: 1220px) {
+    
+}
+@media screen and (max-width: 1220px) {
+    
+}
+@media screen and (max-width: 1220px) {
+    
 }
