@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function(){
   const Select_title = Select.querySelector(".__select__title");
   const Select_label = Select.querySelectorAll(".__select__label");
 
+  const modelName =  document.getElementById('modelName');
   const engine =  document.getElementById('engine');
   const cooling =  document.getElementById('cooling');
   const frontTires = document.getElementById('frontTires'); 
@@ -76,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function(){
       Select_label[i].addEventListener("click", (evt) => {
       Select_title.textContent = evt.target.textContent;
       Select.setAttribute("data-state", "");
+      modelName.textContent = evt.target.textContent;
       engine.textContent = test[evt.target.getAttribute('data-jsonID')].engine;
       cooling.textContent = test[evt.target.getAttribute('data-jsonID')].cooling;
       frontTires.textContent = test[evt.target.getAttribute('data-jsonID')].frontTires;
