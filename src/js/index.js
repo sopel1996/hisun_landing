@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function(){
-
   var swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination_1",
@@ -24,6 +23,18 @@ document.addEventListener('DOMContentLoaded', function(){
       prevEl: ".swiper-button-prev_2",
     },
   });
+  
+  var swiper3 = new Swiper(".mySwiper_3", {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+     
+    },
+  });
 
   function addZero(num) {
     return num > 9 ? num : "0" + num;
@@ -41,7 +52,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
   var test 
 
- fetch('/hisun_landing/js/data.json').then((res)=>{
+//  fetch('/hisun_landing/js/data.json').then((res)=>{
+ fetch('js/data.json').then((res)=>{
     if (res.ok){
       return res.json()
     }
@@ -70,4 +82,27 @@ document.addEventListener('DOMContentLoaded', function(){
       rearTires.textContent = test[evt.target.getAttribute('data-jsonID')].rearTires;
     });
   }
+
+  let goTopBtn = document.querySelector('.back_to_top');
+
+  window.addEventListener('scroll', trackScroll);
+  goTopBtn.addEventListener('click', backToTop);
+
+  function trackScroll() {
+    let scrolled = window.pageYOffset;
+    let coords = 500;
+    if (scrolled > coords) {
+      goTopBtn.classList.add('back_to_top-show');
+    }
+    if (scrolled < coords) {
+      goTopBtn.classList.remove('back_to_top-show');
+    }
+  }
+  function backToTop() {
+    if (window.pageYOffset > 0) {
+      window.scrollBy(0, -80);
+      setTimeout(backToTop, 0);
+    }
+  }
+  trackScroll();
 })

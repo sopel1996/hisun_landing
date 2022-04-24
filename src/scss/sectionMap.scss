@@ -1,6 +1,9 @@
 .sectionMap {
     position: relative;
     overflow: hidden;
+    .mapWrapper{
+        height: 635px;
+    }
     .sectionInner {
         position: absolute;
         top     : 123px;

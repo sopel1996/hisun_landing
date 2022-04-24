@@ -1,8 +1,9 @@
+@import 'color.scss';
+
 .sectionHeader_burger {
   position: relative;
   top: 0;
-  z-index: 100;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   .burger {
@@ -23,7 +24,7 @@
     -moz-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
-    background-color: #000; //paste your styles
+    background-color: transparent; //paste your styles
     width: 40px; //paste your styles
     height: 40px; //paste your styles
     position: relative;
@@ -43,7 +44,7 @@
       bottom: 15px; //paste your styles
       width: 11px; //paste your styles
     }
-    background-color: #000; //paste your styles
+    background-color: transparent; //paste your styles
     width: 40px; //paste your styles
     height: 40px; //paste your styles
     position: relative;
@@ -139,10 +140,10 @@
   .burger-menu_overlay {
     display: none;
     position: fixed;
-    top: 0;
+    top: 95px;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 95px);
     z-index: 50;
   }
   .burger-menu_active .burger-menu_overlay {
