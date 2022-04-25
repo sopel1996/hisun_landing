@@ -76,6 +76,9 @@
             @include InterMedium(16);
             color: #fff;
             margin: 0 15px 0 0 ;
+
+            
+            display: none;
         }
         &-requestCall {
             width: 250px;
