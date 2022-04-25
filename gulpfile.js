@@ -20,8 +20,21 @@ const imagemin = require('gulp-imagemin');
 const ttf2woff = require('gulp-ttf2woff');
 const ttf2woff2 = require('gulp-ttf2woff2');
 
+const webp = require('gulp-webp');
+const gulpAvif = require('gulp-avif');
+ 
+gulp.task('png2webp', () =>
+    gulp.src('./src/img/png/*.png')
+        .pipe(webp())
+        .pipe(gulp.dest('./build/img/webp/'))
+);
 
 
+gulp.task('png2avif', ()=>{
+    return gulp.src('./src/img/png/*.png')
+        .pipe(gulpAvif())
+        .pipe(gulp.dest('./build/img/avif/'));
+});
 
 //Порядок подключения файлов со стилями
 const styleFiles = [

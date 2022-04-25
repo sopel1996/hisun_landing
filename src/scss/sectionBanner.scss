@@ -1,8 +1,18 @@
 @import 'mixins.scss';
 
+.no-webplossy .sectionBanner,
+.no-avif .sectionBanner {
+    background: transparent url(../img/png/bannerBg.png) 50% 50%/cover no-repeat;
+}
+.webplossy .sectionBanner{
+    background: transparent url(../img/webp/bannerBg.webp) 50% 50%/cover no-repeat;
+}
+.avif .sectionBanner {
+    background: transparent url(../img/avif/bannerBg.avif) 50% 50%/cover no-repeat;
+}
+
 .sectionBanner {
     height: 887px;
-    background: transparent url(../img/png/bannerBg.png) 50% 50%/cover no-repeat;
     padding: 76px 0;
     margin: 95px 0 0 0;
     .sectionInner {
