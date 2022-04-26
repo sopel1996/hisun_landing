@@ -106,6 +106,7 @@
             // .nine {}
         }
         .hover{
+            transition: all 0.2s;
             font-weight: bold !important;
         }
         &-accordeon {

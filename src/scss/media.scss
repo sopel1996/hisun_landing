@@ -220,7 +220,12 @@ $lg: 992px;
 
 }
 @media screen and (max-width: $md) {
-    
+    .modal-content {
+        padding: 50px 20px;
+        height: 460px;
+        left: 0;
+        top: calc(50% - 230px);
+    }
     .sectionModels{
         padding: 70px 0 40px 0 ;
     }
