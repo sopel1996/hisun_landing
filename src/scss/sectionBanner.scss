@@ -12,8 +12,9 @@
 }
 
 .sectionBanner {
-    height: 887px;
-    padding: 76px 0;
+    height: calc(100vh - 95px);
+    background: transparent url(../img/png/bannerBg.png) 50% 50%/cover no-repeat;
+    padding: 40px 0;
     margin: 95px 0 0 0;
     .sectionInner {
         height: 100%;
@@ -35,6 +36,7 @@
     &_subtitle {
         width: 512px;
         color: #fff;
+        opacity: 0.9;
         @include RubikMedium(24);
         line-height: 140%;
         text-transform: uppercase;

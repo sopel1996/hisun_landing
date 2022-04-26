@@ -8,7 +8,7 @@ $lg: 992px;
 @media screen and (max-width: 1220px) {
     .sectionInner{
         width: 100%;
-        padding: 0 20px;
+        padding: 0 15px;
     }
     .sectionHeader_logo{
         width: auto;
@@ -220,6 +220,26 @@ $lg: 992px;
 
 }
 @media screen and (max-width: $md) {
+    
+    .sectionModels{
+        padding: 70px 0 40px 0 ;
+    }
+    .sectionBenefits,
+    .sectionPeculiarities,
+    .sectionAboutUs_content,
+    .sectionWantSee,
+    .sectionTable,
+    .sectionWhyUs,
+    .sectionGetOffer{
+        padding: 40px 0;
+    }
+
+    .sectionHeader{
+        height: 60px;
+    }
+    .sectionBanner{
+        margin-top: 60px;
+    }
     .sectionHeader_burger {
         display: flex;
     }
@@ -260,6 +280,8 @@ $lg: 992px;
                 text-decoration: none;
                 text-transform: uppercase;
                 font-size: toRem(18);
+
+                display: none;
             }
             .sectionHeader_btns-requestCall{
                 font-size: toRem(18);
@@ -269,7 +291,7 @@ $lg: 992px;
             }
         }
         &.activeMenu{
-            top: 95px;
+            top: 60px;
         }
     }  
 
@@ -287,6 +309,7 @@ $lg: 992px;
     .sectionBanner_specialOffer-itemsItem{
         width: 100%;
         margin: 0 0 20px 0;
+        height: 100px;
     }
     .sectionModels .sectionInner{
         flex-direction: column;
@@ -378,6 +401,52 @@ $lg: 992px;
             width: 100%;
         }
         .sectionAboutUs .sectionAboutUs_img-item{}
+
+        .sectionModels_title,.sectionModels_color,.sectionModels_price,.sectionModels_characteristics{
+            margin: 0 0 15px 0;
+        }
+        .sectionBenefits_text-title,
+        .sectionAboutUs .sectionAboutUs_content-title,
+        .sectionWantSee_content-title,
+        .sectionGetOffer_text-title{
+            margin: 0 0 20px 0;
+        }
+        .sectionHeader_logo-img{
+            margin: 0;
+        }
+        .noActive{
+            display: none !important;
+        }
+        .sectionTable .sectionTable_table-rowItem{
+            margin: 0 5px 0 0;
+        }
+        .baseModel,
+        .secondModel{
+            width: 100% !important;
+            margin: 0!important;
+            flex-grow: 1;
+        }
+        .sectionTable .sectionTable_table-rowItem{
+            font-size: toRem(16);
+            width: 110px;
+            height: auto;
+            max-height: none;
+        }
+        .sectionTable .sectionTable_table{
+            padding: 20px !important;
+        }
+        .title{
+            flex-shrink: 0;
+        }
+        .sectionTable .sectionTable_table .better::before,
+        .sectionTable .sectionTable_table .worse::before{
+            width: 15px;
+            height: 15px;
+        }
+        .sectionTable .sectionTable_table .pad {
+            padding: 0 0 0 20px;
+        }
+
 }
 @media screen and (max-width: $sm) {
     .sectionBanner_title{
@@ -442,7 +511,8 @@ $lg: 992px;
         font-size: toRem(16);
     }
     .sectionWhyUs_title{
-        font-size: toRem(26);   
+        font-size: toRem(26);  
+        line-height: 1.5; 
     }
     .sectionWhyUs_content-listItem{
         font-size: toRem(16);
@@ -501,6 +571,7 @@ $lg: 992px;
     .sectionTable .sectionTable_table th{
         font-size: toRem(16);
     }
+    
 }
 
 @media screen and (max-width: 1220px) {
@@ -670,5 +741,11 @@ $lg: 992px;
     .sectionPeculiarities_content-iteractiveImg .seven {
         top: 95px;
         right: 85px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .sectionAboutUs .sectionAboutUs_img{
+        right: auto;
+        left: 50%;
     }
 }

@@ -59,9 +59,11 @@
                 position: absolute;
                 @include RubikBold(24);
                 background-color: #fff;
-
-                &:hover {
-                    background-color: darken(#fff, 5);
+                transition: all 0.5s;
+                &:hover{
+                    width: 45px;
+                    height: 45px;
+                    font-size: toRem(26);
                 }
 
                 &:active {
@@ -103,7 +105,9 @@
 
             // .nine {}
         }
-
+        .hover{
+            font-weight: bold !important;
+        }
         &-accordeon {
             .accordeon {
                 width: 500px;
