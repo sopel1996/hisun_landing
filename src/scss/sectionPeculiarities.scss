@@ -61,9 +61,10 @@
                 background-color: #fff;
                 transition: all 0.5s;
                 &:hover{
-                    width: 45px;
-                    height: 45px;
-                    font-size: toRem(26);
+                    // width: 45px;
+                    // height: 45px;
+                    // font-size: toRem(26);
+                    transform: scale(1.2);
                 }
 
                 &:active {

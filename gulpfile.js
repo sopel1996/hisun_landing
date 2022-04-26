@@ -23,10 +23,10 @@ const ttf2woff2 = require('gulp-ttf2woff2');
 const webp = require('gulp-webp');
 const gulpAvif = require('gulp-avif');
  
-gulp.task('png2webp', () =>
-    gulp.src('./src/img/png/*.png')
+gulp.task('png2webp', () =>{
+    return gulp.src('./src/img/png/*.png')
         .pipe(webp())
-        .pipe(gulp.dest('./build/img/webp/'))
+        .pipe(gulp.dest('./build/img/webp/'))}
 );
 
 
@@ -150,4 +150,4 @@ gulp.task('copy2site', () => {
 
 
 //Таск по умолчанию, Запускает del, styles, scripts и watch
-gulp.task('default', gulp.series('html', gulp.parallel('styles', 'scripts', 'image_min', 'copy'), 'watch'));
+gulp.task('default', gulp.series('html', gulp.parallel('styles', 'scripts', 'png2webp','png2avif', 'image_min', 'copy'), 'watch'));

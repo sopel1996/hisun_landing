@@ -51,7 +51,7 @@ $lg: 992px;
         width: 100%;
     }
     .sectionPeculiarities_content-iteractiveImg{
-        background-size: contain;
+        background-size: contain !important;
     }
     .sectionAboutUs{
         height: auto;
@@ -368,6 +368,10 @@ $lg: 992px;
     }
     .sectionWhyUs_content-list, .sectionWhyUs_content-slider{
         width: 100%;
+        height: auto;
+    }
+    .sectionWhyUs_content-slider .swiper-slide{
+        height: 260px;
     }
     .sectionWhyUs_content-list{
         margin: 0 0 20px 0;
@@ -450,6 +454,11 @@ $lg: 992px;
         }
         .sectionTable .sectionTable_table .pad {
             padding: 0 0 0 20px;
+        }
+        .sectionPeculiarities_content-iteractiveImg .number {
+            &:hover{
+                transform: scale(1);
+            }
         }
 
 }

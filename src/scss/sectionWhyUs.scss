@@ -100,6 +100,7 @@
                 @include GilroyRegular(16);
                 color      : #fff;
                 line-height: 1;
+                z-index: 1;
 
                 .swiper-pagination-current {
                     color      : #D4272C;
@@ -113,6 +114,7 @@
                 top  : 0;
                 right: 0;
                 left : auto;
+                z-index: 1;
             }
 
             .swiper-button-prev_2 {
