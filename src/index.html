@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/fancybox.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
     <title>HISUN</title>
@@ -216,7 +217,7 @@
       <div class="sectionInner">
         <div class="swiper mySwiper_3 sectionBenefits_slider">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-fancybox="gallery" data-src="img/png/firstImgBIG.png">
               <picture>
                 <source srcset="img/avif/firstImg.avif" type="image/avif" />
                 <source srcset="img/webp/firstImg.webp" type="image/webp" />
@@ -228,7 +229,7 @@
                 />
               </picture>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-fancybox="gallery" data-src="img/png/secondImgBIG.png">
               <picture>
                 <source srcset="img/avif/secondImg.avif" type="image/avif" />
                 <source srcset="img/webp/secondImg.webp" type="image/webp" />
@@ -240,7 +241,7 @@
                 />
               </picture>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-fancybox="gallery" data-src="img/png/thirdImgBIG.png">
               <picture>
                 <source srcset="img/avif/thirdImg.avif" type="image/avif" />
                 <source srcset="img/webp/thirdImg.webp" type="image/webp" />
@@ -252,7 +253,7 @@
                 />
               </picture>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-fancybox="gallery" data-src="img/png/firstImgBIG.png">
               <picture>
                 <source srcset="img/avif/firstImg.avif" type="image/avif" />
                 <source srcset="img/webp/firstImg.webp" type="image/webp" />
@@ -264,7 +265,7 @@
                 />
               </picture>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-fancybox="gallery" data-src="img/png/secondImgBIG.png">
               <picture>
                 <source srcset="img/avif/secondImg.avif" type="image/avif" />
                 <source srcset="img/webp/secondImg.webp" type="image/webp" />
@@ -276,7 +277,7 @@
                 />
               </picture>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-fancybox="gallery" data-src="img/png/thirdImgBIG.png">
               <picture>
                 <source srcset="img/avif/thirdImg.avif" type="image/avif" />
                 <source srcset="img/webp/thirdImg.webp" type="image/webp" />
@@ -290,6 +291,8 @@
             </div>
           </div>
         </div>
+          <div class="swiper-button-next swiper-button-next_3"></div>
+          <div class="swiper-button-prev swiper-button-prev_3"></div>
         <div class="sectionBenefits_text">
           <h3 class="sectionBenefits_text-title">Преимущества</h3>
           <div class="sectionBenefits_text-content">
@@ -584,60 +587,33 @@
               <div class="__select__title">CAN-AM OUTLANDER</div>
               <div class="__select__content">
                 <input
-                  id="singleSelect0"
-                  value="0"
-                  class="__select__input"
-                  type="radio"
-                  name="singleSelect0"
-                />
-                <label
-                  for="singleSelect0"
-                  class="__select__label"
-                  data-jsonID="0"
-                  >Select item</label
-                >
-
-                <input
                   id="singleSelect1"
-                  value="0"
+                  value="1"
                   class="__select__input"
                   type="radio"
-                  name="select_name"
+                  name="singleSelect"
                 />
                 <label
                   for="singleSelect1"
                   class="__select__label"
                   data-jsonID="1"
-                  >ATV HISUN TACTIC 550 2-UP1</label
+                  >BRP Can-Am Outlander X MR 1000R</label
                 >
 
                 <input
                   id="singleSelect2"
-                  value="0"
+                  value="2"
                   class="__select__input"
                   type="radio"
-                  name="select_name"
+                  name="singleSelect"
                 />
                 <label
                   for="singleSelect2"
                   class="__select__label"
                   data-jsonID="2"
-                  >ATV HISUN TACTIC 550 2-UP2</label
+                  >CFMOTO CFORCE 1000 EPS</label
                 >
 
-                <input
-                  id="singleSelect3"
-                  value="0"
-                  class="__select__input"
-                  type="radio"
-                  name="select_name"
-                />
-                <label
-                  for="singleSelect3"
-                  class="__select__label"
-                  data-jsonID="3"
-                  >ATV HISUN TACTIC 550 2-UP3</label
-                >
               </div>
             </div>
           </div>
@@ -647,41 +623,93 @@
             <div class="back"></div>
             <div class="forward"></div>
           </div>
-            <div class="sectionTable_table-row">
+          <div class="tableWrap">
+          <div class="sectionTable_table-row">
             <div class="sectionTable_table-rowItem header title">Особенности</div>  
-            <div class="sectionTable_table-rowItem header baseModel">HISON TACTIC 750</div>
+            <div class="sectionTable_table-rowItem header baseModel modelName">HISON TACTIC 750</div>
             <div class="sectionTable_table-rowItem header secondModel noActive" id="modelName">CAN</div>
           </div>
           <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Цена</div>
+            <div class="sectionTable_table-rowItem better baseModel Price">735cc EFI</div>
+            <div class="sectionTable_table-rowItem worse secondModel noActive" id="Price">CAN</div>
+          </div>
+          <div class="sectionTable_table-row">
             <div class="sectionTable_table-rowItem title">Двигатель</div>
-            <div class="sectionTable_table-rowItem better baseModel">735cc EFI</div>
-            <div class="sectionTable_table-rowItem worse secondModel noActive" id="engine">CAN</div>
+            <div class="sectionTable_table-rowItem better baseModel Engine">Жидкость</div>
+            <div class="sectionTable_table-rowItem worse secondModel noActive" id="Engine">CAN</div>
           </div>
           <div class="sectionTable_table-row">
-            <div class="sectionTable_table-rowItem title">Охлаждение двигателя</div>
-            <div class="sectionTable_table-rowItem better baseModel">Жидкость</div>
-            <div class="sectionTable_table-rowItem worse secondModel noActive" id="cooling">CAN</div>
+            <div class="sectionTable_table-rowItem title">Охлаждение</div>
+            <div class="sectionTable_table-rowItem better baseModel Cooling">26 х 9 -12</div>
+            <div class="sectionTable_table-rowItem worse secondModel noActive" id="Cooling">CAN</div>
           </div>
           <div class="sectionTable_table-row">
-            <div class="sectionTable_table-rowItem title">Передние шины</div>
-            <div class="sectionTable_table-rowItem better baseModel">26 х 9 -12</div>
-            <div class="sectionTable_table-rowItem worse secondModel noActive" id="frontTires">CAN</div>
+            <div class="sectionTable_table-rowItem title">Рабочий Объем</div>
+            <div class="sectionTable_table-rowItem better baseModel WorkingVolume">26 х 9 -12</div>
+            <div class="sectionTable_table-rowItem worse secondModel noActive" id="WorkingVolume">CAN</div>
           </div>
           <div class="sectionTable_table-row">
-            <div class="sectionTable_table-rowItem title">Задние шины</div>
-            <div class="sectionTable_table-rowItem better baseModel">26 х 9 -12</div>
-            <div class="sectionTable_table-rowItem worse secondModel noActive" id="rearTires">CAN</div>
+            <div class="sectionTable_table-rowItem title">Макс. мощность</div>
+            <div class="sectionTable_table-rowItem pad baseModel MaxPower">Двойной гидравлический диск</div>
+            <div class="sectionTable_table-rowItem pad secondModel noActive" id="MaxPower">CAN</div>
           </div>
           <div class="sectionTable_table-row">
-            <div class="sectionTable_table-rowItem title">Передние тормоза</div>
-            <div class="sectionTable_table-rowItem pad baseModel">Двойной гидравлический диск</div>
-            <div class="sectionTable_table-rowItem pad secondModel noActive">CAN</div>
+            <div class="sectionTable_table-rowItem title">Трансмиссия</div>
+            <div class="sectionTable_table-rowItem pad baseModel Transmission">Двойной гидравлический диск</div>
+            <div class="sectionTable_table-rowItem pad secondModel noActive" id="Transmission">СAN</div>
           </div>
           <div class="sectionTable_table-row">
-            <div class="sectionTable_table-rowItem title">Задние тормоза</div>
-            <div class="sectionTable_table-rowItem pad baseModel">Двойной гидравлический диск</div>
-            <div class="sectionTable_table-rowItem pad secondModel noActive">СAN</div>
+            <div class="sectionTable_table-rowItem title">Привод</div>
+            <div class="sectionTable_table-rowItem pad baseModel DriveUnit">Двойной гидравлический диск</div>
+            <div class="sectionTable_table-rowItem pad secondModel noActive" id="DriveUnit">СAN</div>
           </div>
+          <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Подвеска</div>
+            <div class="sectionTable_table-rowItem pad baseModel Suspension">Двойной гидравлический диск</div>
+            <div class="sectionTable_table-rowItem pad secondModel noActive" id="Suspension">СAN</div>
+          </div>
+          <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Тормоза передние/задние</div>
+            <div class="sectionTable_table-rowItem pad baseModel BrakesFrontRear">Двойной гидравлический диск</div>
+            <div class="sectionTable_table-rowItem pad secondModel noActive" id="BrakesFrontRear">СAN</div>
+          </div>
+          <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Дорожный просвет</div>
+            <div class="sectionTable_table-rowItem pad baseModel GroundClearance">Двойной гидравлический диск</div>
+            <div class="sectionTable_table-rowItem pad secondModel noActive" id="GroundClearance">СAN</div>
+          </div>
+          <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Диски</div>
+            <div class="sectionTable_table-rowItem pad baseModel Disks">Двойной гидравлический диск</div>
+            <div class="sectionTable_table-rowItem pad secondModel noActive" id="Disks">СAN</div>
+          </div>
+          <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Скорость</div>
+            <div class="sectionTable_table-rowItem pad baseModel Speed">Двойной гидравлический диск</div>
+            <div class="sectionTable_table-rowItem pad secondModel noActive" id="Speed">СAN</div>
+          </div>
+          <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Сухая масса</div>
+            <div class="sectionTable_table-rowItem pad baseModel DryWeight">Двойной гидравлический диск</div>
+            <div class="sectionTable_table-rowItem pad secondModel noActive" id="DryWeight">СAN</div>
+          </div>
+          <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Колесная база</div>
+            <div class="sectionTable_table-rowItem pad baseModel Wheelbase">Двойной гидравлический диск</div>
+            <div class="sectionTable_table-rowItem pad secondModel noActive" id="Wheelbase">СAN</div>
+          </div>
+          <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Рулевое управление</div>
+            <div class="sectionTable_table-rowItem pad baseModel Steering">Двойной гидравлический диск</div>
+            <div class="sectionTable_table-rowItem pad secondModel noActive" id="Steering">СAN</div>
+          </div>
+          <div class="sectionTable_table-row">
+            <div class="sectionTable_table-rowItem title">Базовая комплектация</div>
+            <div class="sectionTable_table-rowItem pad baseModel BasicEquipment">Двойной гидравлический диск</div>
+            <div class="sectionTable_table-rowItem pad secondModel noActive" id="BasicEquipment">СAN</div>
+          </div>
+        </div>
         </div>
         </div>
     </section>
@@ -842,6 +870,8 @@
       </div>
     </footer>
 
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/video.js"></script>
     <script src="js/index.js"></script>

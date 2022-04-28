@@ -1,31 +1,64 @@
 [
     {
-      "modelName": "model1",
-      "engine": "735cc EFI",
-      "cooling":"Жидкость",
-      "frontTires":"26 х 9 -12",
-      "rearTires": "26 х 9 -12"
+      "modelName": "Hisun Tactic 1000",
+      "Price": "от 1 199 000 Р.",
+      "Engine": "4-х тактный, V-образный, EFI",
+      "Cooling": "Жидкостное",
+      "WorkingVolume": "976 см³",
+      "MaxPower": "68 л.с. / 50 кВт при 7000 об/мин",
+      "Transmission": "CVTech Trailbloc (Канада). Автоматическая трансмиссия",
+      "DriveUnit": "2WD/4WD подключаемый",
+      "Suspension": "А-образные рычаги со стабилизатором поперечной устойчивости. Газовые регулируемые на сжатие и отбой амортизаторы с Nitrogen Assist",
+      "BrakesFrontRear": "Дисковые, вентилируемые, гидравлические. ",
+      "GroundClearance": "Увеличенный дорожный просвет до 300 мм",
+      "Disks": "14 дюймовые алюминиевые",
+      "Speed": "120 км/ч",
+      "DryWeight": "",
+      "Wheelbase": "1570 мм",
+      "Steering": "С электроусилителем (EPS)",
+      "BasicEquipment": "Электрическая лебедка, усиленные передний и задний бамперы, расширители крыльев, сиденье пассажира со спинкой"
+
     },
     {
-      "modelName": "model2",
-      "engine": "735cc EFI",
-      "cooling":"Жидкость",
-      "frontTires":"26 х 9 -12",
-      "rearTires": "26 х 9 -12"
+      "modelName": "BRP Can-Am Outlander X MR 1000R",
+      "Price": "от 1 904 000 Р.",
+      "Engine": "4-х тактный, V-образный",
+      "Cooling": "Жидкостное",
+      "WorkingVolume": "976 см³",
+      "MaxPower": "91 л. с./68 кВт ",
+      "Transmission": "Вариатор",
+      "DriveUnit": "2WD/4WD подключаемый",
+      "Suspension": "А-образные рычаги со стабилизатором поперечной устойчивости. Независимая задняя подвеска",
+      "BrakesFrontRear": "Дисковые, вентилируемые, гидравлические. ",
+      "GroundClearance": "279",
+      "Disks": "14 дюймовые алюминиевые",
+      "Speed": "110 км/ч",
+      "DryWeight": "460 кг",
+      "Wheelbase": "1499 мм",
+      "Steering": "Динамический усилитель руля (DPS) с тремя режимами работы",
+      "BasicEquipment": "-"
+      
     },
     {
-      "modelName": "model3",
-      "engine": "735cc EFI",
-      "cooling":"Жидкость",
-      "frontTires":"26 х 9 -12",
-      "rearTires": "26 х 9 -12"
-    },
-    {
-      "modelName": "model4",
-      "engine": "735cc EFI",
-      "cooling":"Жидкость",
-      "frontTires":"26 х 9 -12",
-      "rearTires": "26 х 9 -12"
+      "modelName": "CFMOTO CFORCE 1000 EPS",
+      "Price": "от 1 499 900 Р.",
+      "Engine": "4-х тактный, V-образный, EFI",
+      "Cooling": "Жидкостное",
+      "WorkingVolume": "962,6 см³",
+      "MaxPower": "75 л. с./55 кВт при 7250 об/мин",
+      "Transmission": "CVTech (Канада). Вариатор +КПП",
+      "DriveUnit": "2WD/4WD подключаемый",
+      "Suspension": "А-образные рычаги со стабилизатором поперечной устойчивости.",
+      "BrakesFrontRear": "Дисковые, вентилируемые, гидравлические. ",
+      "GroundClearance": "285 мм",
+      "Disks": "12”/12”, легкосплавные",
+      "Speed": "108 км/ч",
+      "DryWeight": "452 кг",
+      "Wheelbase": "1480 мм",
+      "Steering": "С электроусилителем (EPS)",
+      "BasicEquipment": "-"
+      
     }
+    
     
 ]

@@ -4,77 +4,83 @@
 .no-avif .sectionBanner {
     background: transparent url(../img/png/bannerBg.png) 50% 50%/cover no-repeat;
 }
-.webplossy .sectionBanner{
+
+.webplossy .sectionBanner {
     background: transparent url(../img/webp/bannerBg.webp) 50% 50%/cover no-repeat;
 }
+
 .avif .sectionBanner {
     background: transparent url(../img/avif/bannerBg.avif) 50% 50%/cover no-repeat;
 }
 
 .sectionBanner {
-    height: calc(100vh - 95px);
+    height    : calc(100vh - 95px);
+    min-height: 640px;
     background: transparent url(../img/png/bannerBg.png) 50% 50%/cover no-repeat;
-    padding: 40px 0;
-    margin: 95px 0 0 0;
+    padding   : 40px 0;
+    margin    : 95px 0 0 0;
+
     .sectionInner {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        height         : 100%;
+        display        : flex;
+        flex-direction : column;
+        align-items    : flex-start;
         justify-content: space-between;
 
     }
 
     &_title {
         @include RubikBold(64);
-        line-height: 76px;
+        line-height   : 76px;
         text-transform: uppercase;
-        color: #fff;
-        width: 796px;
+        color         : #fff;
+        width         : 796px;
     }
-    
+
     &_subtitle {
-        width: 512px;
-        color: #fff;
+        width  : 512px;
+        color  : #fff;
         opacity: 0.9;
         @include RubikMedium(24);
-        line-height: 140%;
+        line-height   : 140%;
         text-transform: uppercase;
     }
 
     &_getOffer {
-        width: 330px;
+        width : 330px;
         height: 80px;
     }
 
     &_specialOffer {
         width: 100%;
+
         &-title {
             @include RubikSemiBold(36);
             text-transform: uppercase;
-            color: #fff;
-            margin: 0 0 30px 0;
+            color         : #fff;
+            margin        : 0 0 30px 0;
         }
 
         &-items {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+            display        : flex;
+            flex-direction : row;
+            align-items    : center;
             justify-content: space-between;
-            width: 100%;
+            width          : 100%;
+
             &Item {
-                width: 388px;
-                height: 137px;
-                border-radius: 40px;
+                width           : 388px;
+                height          : 137px;
+                border-radius   : 40px;
                 background-color: rgba(0, 0, 0, 0.6);
-                color: #fff;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                color           : #fff;
+                display         : flex;
+                flex-direction  : column;
+                align-items     : center;
+                justify-content : center;
                 @include RubikMedium(20);
 
-                span{
+                span {
                     @include RubikBold(36);
                 }
             }

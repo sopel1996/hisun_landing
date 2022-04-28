@@ -33,6 +33,10 @@ document.addEventListener("DOMContentLoaded", function () {
         spaceBetween: 10,
       },
     },
+    navigation: {
+      nextEl: ".swiper-button-next_3",
+      prevEl: ".swiper-button-prev_3",
+    },
   });
 
   function addZero(num) {
@@ -44,16 +48,46 @@ document.addEventListener("DOMContentLoaded", function () {
   const Select_title = Select.querySelector(".__select__title");
   const Select_label = Select.querySelectorAll(".__select__label");
 
+  const BASEmodelName = document.querySelector(".modelName");
+  const BASEPrice = document.querySelector(".Price");
+  const BASEEngine = document.querySelector(".Engine");
+  const BASECooling = document.querySelector(".Cooling");
+  const BASEWorkingVolume = document.querySelector(".WorkingVolume");
+  const BASEMaxPower = document.querySelector(".MaxPower");
+  const BASETransmission = document.querySelector(".Transmission");
+  const BASEDriveUnit = document.querySelector(".DriveUnit");
+  const BASESuspension = document.querySelector(".Suspension");
+  const BASEBrakesFrontRear = document.querySelector(".BrakesFrontRear");
+  const BASEGroundClearance = document.querySelector(".GroundClearance");
+  const BASEDisks = document.querySelector(".Disks");
+  const BASESpeed = document.querySelector(".Speed");
+  const BASEDryWeight = document.querySelector(".DryWeight");
+  const BASEWheelbase = document.querySelector(".Wheelbase");
+  const BASESteering = document.querySelector(".Steering");
+  const BASEBasicEquipment = document.querySelector(".BasicEquipment");
+  
   const modelName = document.getElementById("modelName");
-  const engine = document.getElementById("engine");
-  const cooling = document.getElementById("cooling");
-  const frontTires = document.getElementById("frontTires");
-  const rearTires = document.getElementById("rearTires");
+  const Price = document.getElementById("Price");
+  const Engine = document.getElementById("Engine");
+  const Cooling = document.getElementById("Cooling");
+  const WorkingVolume = document.getElementById("WorkingVolume");
+  const MaxPower = document.getElementById("MaxPower");
+  const Transmission = document.getElementById("Transmission");
+  const DriveUnit = document.getElementById("DriveUnit");
+  const Suspension = document.getElementById("Suspension");
+  const BrakesFrontRear = document.getElementById("BrakesFrontRear");
+  const GroundClearance = document.getElementById("GroundClearance");
+  const Disks = document.getElementById("Disks");
+  const Speed = document.getElementById("Speed");
+  const DryWeight = document.getElementById("DryWeight");
+  const Wheelbase = document.getElementById("Wheelbase");
+  const Steering = document.getElementById("Steering");
+  const BasicEquipment = document.getElementById("BasicEquipment");
 
   var test;
 
-   fetch('/hisun_landing/js/data.json')
-  //  fetch("js/data.json")
+  //  fetch('/hisun_landing/js/data.json')
+   fetch("js/data.json")
    .then((res)=>{
       if (res.ok) {
         return res.json();
@@ -61,6 +95,46 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .then((data) => {
       test = data;
+
+      console.log(data);
+
+      BASEmodelName.textContent = data[0].modelName;
+      BASEPrice.textContent = data[0].Price;
+      BASEEngine.textContent = data[0].Engine;
+      BASECooling.textContent = data[0].Cooling;
+      BASEWorkingVolume.textContent = data[0].WorkingVolume;
+      BASEMaxPower.textContent = data[0].MaxPower;
+      BASETransmission.textContent = data[0].Transmission;
+      BASEDriveUnit.textContent = data[0].DriveUnit;
+      BASESuspension.textContent = data[0].Suspension;
+      BASEBrakesFrontRear.textContent = data[0].BrakesFrontRear;
+      BASEGroundClearance.textContent = data[0].GroundClearance;
+      BASEDisks.textContent = data[0].Disks;
+      BASESpeed.textContent = data[0].Speed;
+      BASEDryWeight.textContent = data[0].DryWeight;
+      BASEWheelbase.textContent = data[0].Wheelbase;
+      BASESteering.textContent = data[0].Steering;
+      BASEBasicEquipment.textContent = data[0].BasicEquipment;
+
+      modelName.textContent = data[1].modelName;
+      Price.textContent = data[1].Price;
+      Engine.textContent = data[1].Engine;
+      Cooling.textContent = data[1].Cooling;
+      WorkingVolume.textContent = data[1].WorkingVolume;
+      MaxPower.textContent = data[1].MaxPower;
+      Transmission.textContent = data[1].Transmission;
+      DriveUnit.textContent = data[1].DriveUnit;
+      Suspension.textContent = data[1].Suspension;
+      BrakesFrontRear.textContent = data[1].BrakesFrontRear;
+      GroundClearance.textContent = data[1].GroundClearance;
+      Disks.textContent = data[1].Disks;
+      Speed.textContent = data[1].Speed;
+      DryWeight.textContent = data[1].DryWeight;
+      Wheelbase.textContent = data[1].Wheelbase;
+      Steering.textContent = data[1].Steering;
+      BasicEquipment.textContent = data[1].BasicEquipment;
+
+
       return data;
     });
 
@@ -78,14 +152,26 @@ document.addEventListener("DOMContentLoaded", function () {
     Select_label[i].addEventListener("click", (evt) => {
       Select_title.textContent = evt.target.textContent;
       Select.setAttribute("data-state", "");
+      
       modelName.textContent = evt.target.textContent;
-      engine.textContent = test[evt.target.getAttribute("data-jsonID")].engine;
-      cooling.textContent =
-        test[evt.target.getAttribute("data-jsonID")].cooling;
-      frontTires.textContent =
-        test[evt.target.getAttribute("data-jsonID")].frontTires;
-      rearTires.textContent =
-        test[evt.target.getAttribute("data-jsonID")].rearTires;
+
+      Price.textContent = test[evt.target.getAttribute("data-jsonID")].Price;
+      Engine.textContent = test[evt.target.getAttribute("data-jsonID")].Engine;
+      Cooling.textContent = test[evt.target.getAttribute("data-jsonID")].Cooling;
+      WorkingVolume.textContent = test[evt.target.getAttribute("data-jsonID")].WorkingVolume;
+      MaxPower.textContent = test[evt.target.getAttribute("data-jsonID")].MaxPower;
+      Transmission.textContent = test[evt.target.getAttribute("data-jsonID")].Transmission;
+      DriveUnit.textContent = test[evt.target.getAttribute("data-jsonID")].DriveUnit;
+      Suspension.textContent = test[evt.target.getAttribute("data-jsonID")].Suspension;
+      BrakesFrontRear.textContent = test[evt.target.getAttribute("data-jsonID")].BrakesFrontRear;
+      GroundClearance.textContent = test[evt.target.getAttribute("data-jsonID")].GroundClearance;
+      Disks.textContent = test[evt.target.getAttribute("data-jsonID")].Disks;
+      Speed.textContent = test[evt.target.getAttribute("data-jsonID")].Speed;
+      DryWeight.textContent = test[evt.target.getAttribute("data-jsonID")].DryWeight;
+      Wheelbase.textContent = test[evt.target.getAttribute("data-jsonID")].Wheelbase;
+      Steering.textContent = test[evt.target.getAttribute("data-jsonID")].Steering;
+      BasicEquipment.textContent = test[evt.target.getAttribute("data-jsonID")].BasicEquipment;
+      
     });
   }
 

@@ -229,6 +229,12 @@ $lg: 992px;
     .sectionModels{
         padding: 70px 0 40px 0 ;
     }
+    .sectionTable .sectionTable_table .btns {display: flex;}
+    .sectionBenefits .swiper{padding: 0;}
+    .sectionBenefits .swiper-button-next,
+    .sectionBenefits .swiper-button-prev{display: none;}
+    .sectionBenefits_slider .swiper-slide:hover{transform: scale(1);}
+    
     .sectionBenefits,
     .sectionPeculiarities,
     .sectionAboutUs_content,
