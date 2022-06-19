@@ -80,7 +80,16 @@ $lg: 992px;
     .sectionWantSee_img{
         width: 48%;
     }
-    
+
+    .sectionModels_cardsList-itemTitle{
+        font-size: toRem(40);
+    }
+    .sectionModels_cardsList-itemAdvantages .AdvantagesItem .red{
+        font-size: toRem(28);
+    }
+    .sectionModels_cardsList-itemPrice .price{
+        font-size: toRem(55);
+    }
 }
 @media screen and (max-width: $lg) {
     .sectionWantSee_content-title,
@@ -218,6 +227,34 @@ $lg: 992px;
         padding: 40px 20px;
     }
 
+    .sectionModels_cardsList-itemTitle{
+        font-size: toRem(32);
+    }
+    .sectionModels_cardsList-itemAdvantages .AdvantagesItem {
+        font-size: toRem(14);
+    }
+    .sectionModels_cardsList-itemAdvantages .AdvantagesItem .red{
+        font-size: toRem(20);
+    }
+    .sectionModels_cardsList-itemPrice {
+        font-size: toRem(30);
+    }
+    .sectionModels_cardsList-itemPrice .price{
+        font-size: toRem(40);
+    }
+    .sectionModels_cardsList-item .btns .btnBuy,
+    .sectionModels_cardsList-item .btns .btnCredit{
+        font-size: toRem(14);
+    }
+    .sectionModels_cardsList-item .btns .btnCredit:hover{
+        background-color: transparent;
+        color: #C0C1C2;
+        border: 1px solid #C0C1C2;
+    }
+    .sectionModels_cardsList-item .btns .btnBuy:hover{
+        background-color: $grey_color;
+        color: #fff;
+    }
 }
 @media screen and (max-width: $md) {
     .modal-content {
@@ -466,6 +503,35 @@ $lg: 992px;
             &:hover{
                 transform: scale(1);
             }
+        }
+
+        .sectionModels_cardsList-itemTitle{
+            font-size: toRem(20);
+        }
+        .sectionModels_cardsList-itemAdvantages .AdvantagesItem {
+            font-size: toRem(14);
+        }
+        .sectionModels_cardsList-itemAdvantages .AdvantagesItem .red{
+            font-size: toRem(20);
+        }
+        .sectionModels_cardsList-itemPrice {
+            font-size: toRem(30);
+        }
+        .sectionModels_cardsList-itemPrice .price{
+            font-size: toRem(40);
+        }
+        .sectionModels_cardsList-item .btns .btnBuy,
+        .sectionModels_cardsList-item .btns .btnCredit{
+            font-size: toRem(14);
+        }
+        .sectionModels_cardsList-item .btns .btnCredit:hover{
+            background-color: transparent;
+            color: #C0C1C2;
+            border: 1px solid #C0C1C2;
+        }
+        .sectionModels_cardsList-item .btns .btnBuy:hover{
+            background-color: $grey_color;
+            color: #fff;
         }
 
 }

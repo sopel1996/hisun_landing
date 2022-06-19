@@ -1,0 +1,127 @@
+.sectionModels {
+    height: auto;
+    .sectionInner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    &_header {
+        @include RubikBold(48);
+        letter-spacing: 0.01em;
+        color: $grey_color;
+        margin: 0 0 40px 0;
+    }
+    &_cardsList {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between  ;
+        &-item {
+            width: 48%;
+            border: 1px solid #C0C1C2;
+            padding: 20px;
+            &Img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+                margin: 0 0 30px 0
+            }
+            &Title {
+                @include RubikMedium(48);
+                line-height: 56px;
+                letter-spacing: 0.01em;
+                color: $grey_color;
+                position: relative;
+                margin: 0 0 20px 0;
+                .beforeUP {
+                    @include RubikMedium(16);
+                    padding: 0px 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    line-height: 40px;                    
+                    position: absolute;
+                    top: -40px;
+                    left: 0;
+                    color: white;
+                    background-color: $grey_color;
+                    text-transform: uppercase;
+                }
+            }
+            &Advantages {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 0 20px 0;
+
+                .AdvantagesItem {
+                    @include RubikRegular(16);
+                    line-height: 24px;
+                    letter-spacing: 0.01em;
+                    text-transform: uppercase;
+                    color: $grey_color;
+                    display: flex;
+                    flex-direction: column;
+                    .red {
+                        @include RubikMedium(32);
+                        display: block;
+                        line-height: 40px;
+                        letter-spacing: 0.01em;
+                        text-transform: uppercase;
+                        color: $card_color_red;
+                    }
+                }
+            }
+            &Price {
+                @include RubikMedium(32);
+                line-height: 48px;
+                letter-spacing: 0.01em;
+                color: $grey_color;
+                margin: 0 0 20px 0;
+
+                .price{
+                    @include RubikSemiBold(64);
+                    line-height: 72px;
+                    letter-spacing: 0.01em;
+                    color: $primary_color;
+                }
+            }
+            .btns {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .btnBuy {
+                    display: inline-flex;
+                    width: 48%;
+                    height: 80px;
+                    background-color: $grey_color;
+                    color: #fff;
+                    border-radius: 0;
+                    transition: all 0.5s;
+                    &:hover{
+                        background-color: $primary_color;
+
+                    }
+                }
+                .btnCredit {
+                    display: inline-flex;
+                    width: 48%;
+                    height: 80px;
+                    border-radius: 0;
+                    background-color: transparent;
+                    color: #C0C1C2;
+                    border: 1px solid #C0C1C2;
+                    transition: all 0.5s;
+                    &:hover{
+                        background-color: $primary_color;
+                        border-color: $primary_color;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
